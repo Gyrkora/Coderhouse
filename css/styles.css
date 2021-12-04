@@ -545,15 +545,19 @@ footer ul {
     padding: 2rem;
     border-radius: 50px 27px 50px 27px ;
     border: 5px solid var(--tierraOscuro);
+    transition: all .5s ease-in-out;
+}
 
-    
-   
+.pagos div:hover {
+    background-color:var(--color3);
+    transform: scale(1.1) rotate(2deg);
 }
 
 .pagos i {
     font-size: 5rem;
     z-index: 1;
     color: var(--tierraOscuro);
+
 }
 
 
@@ -562,9 +566,28 @@ footer ul {
 
 
 .fa-map-marker-alt {
-    font-size: 3rem;
+    font-size: 1rem;
     color: rgb(180, 164, 14);
-}
+    position: relative;
+    animation: mymove 2s;
+    animation-delay: 1s;
+    animation-fill-mode: both;
+    /* transition: transform 5s  ease-in-out; */
+  }
+  
+  @keyframes mymove {
+    50% {transform: rotate(-20deg); font-size: 2rem; color: red;}
+    60% { transform: rotate(-10deg); color: orange;}
+    70% {transform: rotate(20deg); font-size: 4rem; }
+    
+    70% {font-size: 5rem; transform: translateY(-50px);}
+    85% {color: rgb(94, 91, 65);}
+    100% {top: 0px; font-size: 3rem; color: rgb(180, 164, 14)}
+  }
+
+  .fa-map-marker-alt:hover {
+      transform: translateY(-5px) scale(1.5);
+  }
 
 .formulario {
     display: flex;
@@ -760,8 +783,8 @@ footer ul {
 
     .pagos div {
         width: 30rem;
-
     }
+
 }
 
 
