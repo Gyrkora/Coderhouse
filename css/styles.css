@@ -98,17 +98,6 @@ h2, h1 {
       }
 
 
-  
-
-  /* @keyframes example {
-    from {
-        color: gray;
-        font-size: 2rem;
-    }
-    to {
-        color: var(--tierraOscuro);
-        font-size: 2.5rem;
-    } */
     
 }
 
@@ -397,11 +386,9 @@ footer ul {
     grid-template-columns: 49% 49%;
     grid-template-rows: 20rem 35rem 40rem;
     margin: 5rem auto;
-    /* align-items: center; */
     justify-content: center;
     grid-gap: .5rem;
-    /* grid-column-gap: .5rem; */
-    /* grid-row-gap: 1rem; */
+    
 
     grid-template-areas: 
     "medicinales almacigos"
