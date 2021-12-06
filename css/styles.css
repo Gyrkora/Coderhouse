@@ -37,7 +37,7 @@
 
 html {
     box-sizing: border-box;
-    font-size: 62.5%;
+    font-size: 62.5% ;
     scroll-behavior: smooth;
 }
 
@@ -48,8 +48,9 @@ html {
 body {
     margin: 0;
     padding: 0;
-    font-size: 1.6rem;
+    font-size: 1.6rem !important;
     line-height: 2;
+    /* background-color: var(--grisOscuro) !important; */
     
 }
 
@@ -57,8 +58,8 @@ body {
 
 
 a {
-    text-decoration: none;
-    color: inherit;
+    text-decoration: none !important;
+    color: inherit !important;
 
 }
 
@@ -77,6 +78,7 @@ h2, h1 {
     color: var(--tierraOscuro);
     /* transition: 2s ease-in-out; */
     animation: example 2s;
+    margin: 4rem 0 0 0;
     /* animation-duration: 2s; */
     /* transform-origin: left; */
 }
@@ -139,7 +141,6 @@ img {
     display: block;
     padding: 1rem 3rem;
     font-size: 1.6rem;
-    border: 3px solid black;
     color: white;
     
 }
@@ -176,45 +177,39 @@ img {
 nav {
     background-color: var(--color2);
     font-family: var(--fuenteParrafos);
-    text-align: center;
+    /* text-align: center; */
+    padding: 0;
+    margin: 0;
 } 
 
 nav ul {
-    padding: 0;
-    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 0 auto; 
+    gap: 5rem;
 }
-
-
-@media (min-width: 768px) {
-
-    nav ul {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-        margin: 0 auto;
-    }
-
-}
-
 
 nav ul li {
-    flex-basis: calc(25% - 2rem);
-
-
+    text-align: center;
 }
+
+
+/* nav ul li {
+    flex-basis: calc(50% - 2rem);
+} */
 
 nav ul li a {
     display: inline-block;
-    padding: 2rem;
-
+    padding: 1rem;
 }
 
 
 nav a:hover {
     background-color: var(--color1);
     transition: background-color .3s ease;
-    padding: 2rem 6rem;
+    /* padding: 2rem 4rem; */
     color: var(--tierraOscuro);
     
 }
@@ -368,7 +363,7 @@ footer ul {
 
 .contenedor-plantas {
     text-align: center;
-    margin: 7rem auto;
+  
     
 }
 
@@ -529,8 +524,8 @@ footer ul {
     text-align: center;
     gap: 2rem;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    align-items: center !important;
+    justify-content: center !important;
     flex-direction: column;
 
 
@@ -545,20 +540,19 @@ footer ul {
     padding: 2rem;
     border-radius: 50px 27px 50px 27px ;
     border: 5px solid var(--tierraOscuro);
-    transition: all .5s ease-in-out;
-}
 
-.pagos div:hover {
-    background-color:var(--color3);
-    transform: scale(1.1) rotate(2deg);
+    
+   
 }
 
 .pagos i {
     font-size: 5rem;
     z-index: 1;
     color: var(--tierraOscuro);
-
+    line-height: 2 ;
 }
+
+
 
 
 
@@ -566,28 +560,9 @@ footer ul {
 
 
 .fa-map-marker-alt {
-    font-size: 1rem;
+    font-size: 3rem;
     color: rgb(180, 164, 14);
-    position: relative;
-    animation: mymove 2s;
-    animation-delay: 1s;
-    animation-fill-mode: both;
-    /* transition: transform 5s  ease-in-out; */
-  }
-  
-  @keyframes mymove {
-    50% {transform: rotate(-20deg); font-size: 2rem; color: red;}
-    60% { transform: rotate(-10deg); color: orange;}
-    70% {transform: rotate(20deg); font-size: 4rem; }
-    
-    70% {font-size: 5rem; transform: translateY(-50px);}
-    85% {color: rgb(94, 91, 65);}
-    100% {top: 0px; font-size: 3rem; color: rgb(180, 164, 14)}
-  }
-
-  .fa-map-marker-alt:hover {
-      transform: translateY(-5px) scale(1.5);
-  }
+}
 
 .formulario {
     display: flex;
@@ -596,7 +571,7 @@ footer ul {
     max-width: 60rem;
     width: 95%;
     height: 80%;
-    padding: 3rem;
+    padding: 2rem;
     background-color: var(--color2);
     border-radius: .5rem;
     margin-bottom: 3rem;
@@ -608,7 +583,7 @@ footer ul {
 }
 
 #nombre, #phone, #apellido {
-    height: 3rem;
+    height: 3rem ;
     margin-bottom: 1rem;
 }
 
@@ -617,17 +592,145 @@ footer ul {
     width: 100%;
 }
 
-.formulario input, textarea{
-    border: none;
-}
-
 .formulario textarea {
     height: 20rem;
 }
 
 .btn--formulario {
     background-color: var(--color1);
+    /* border: 2px solid var(--tierraOscuro); */
+    color: black;
 }
+
+
+
+
+
+
+/* ------ Maceteros --------- */
+
+/* bootstrap en maceteros */
+
+.container {
+    margin: 5rem !important;
+}
+
+
+.card {
+    width: 25rem !important;
+    align-items: center !important;
+    transition: all .5s ease-in-out;
+    
+}
+
+.card img {   
+    width: 20rem;
+    height: 30rem;
+}
+
+
+  .col {
+      display: flex;
+      justify-content: center !important;
+      align-items: center !important;
+  }
+
+
+ .btn-primary {
+     background-color: var(--tierraOscuro) !important;
+     color: white !important;
+ }
+
+
+.maceteros-gap {
+    grid-row-gap: 5rem;
+}
+
+
+
+
+
+
+/* ------------------------ MODIFICACIONES BOOTSTRAP ------------------------------ */
+
+
+.container {
+ 
+        width: 100%;
+}
+
+
+.contenedor-imagenes {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 15%;
+  padding: 0;
+  color: #fff;
+  text-align: center;
+  background: none;
+  border: 0;
+  opacity: 0.5;
+  transition: opacity 0.15s ease;
+}
+
+
+.carousel-control-prev:hover, .carousel-control-prev:focus,
+.carousel-control-next:hover,
+.carousel-control-next:focus {
+  color: #fff;
+  text-decoration: none;
+  outline: 0;
+  opacity: 0.9;
+}
+
+.carousel-control-prev {
+  left: 0;
+}
+
+.carousel-control-next {
+  right: 0;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  display: inline-block;
+  width: 2rem;
+  height: 2rem;
+  background-repeat: no-repeat;
+  background-position: 50%;
+  background-size: 100% 100%;
+}
+
+
+.carousel-control-prev-icon {
+    background-image: url("/arrow-circle-left-solid.svg");
+  }
+  
+.carousel-control-next-icon {
+    background-image: url("/arrow-circle-right-solid.svg");
+    
+    
+  }
+
+
+  .carousel2 {
+      position: relative;
+  }
+
 
 
 
@@ -673,7 +776,7 @@ footer ul {
       
         transform: scale(1.1); 
         z-index: 1;
-        border: 5px solid var(--verdeOscuro);
+        /* border: 5px solid var(--verdeOscuro); */
         -webkit-box-shadow: 0px 10px 13px -7px #000000, 5px 5px 16px 5px rgba(0,0,0,0); 
         box-shadow: 0px 10px 13px -7px #000000, 5px 5px 16px 5px rgba(0,0,0,0);
         transform: translateY(-10px);
@@ -728,14 +831,16 @@ footer ul {
 
 
     /* contacto page */
-    .formulario #apellido {
-        width: 50%;
-    
+
+    .nombre-apellido {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
     }
 
-    .formulario #nombre {
-        width: 49%;
-    }
+    
+
+    
 
     .tres-columnas {
         display: flex;
@@ -743,6 +848,15 @@ footer ul {
         flex-wrap: nowrap;
     }
 
+
+    .card:hover {
+        background-color: rgb(165, 152, 152);
+        cursor: pointer;
+        transform: scale(1.1);
+    }
+
+
+    
     
 }
 
@@ -754,6 +868,7 @@ footer ul {
     .contenedor-plantas__divs {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
+       
 
     }
     .imagen4 {
@@ -773,7 +888,7 @@ footer ul {
     }  
 
     /* fourth section = pagos--index */
-    .pagos{ 
+    .pagos { 
         gap: 5rem;
         flex-direction: row;
         align-items: center;
@@ -783,8 +898,12 @@ footer ul {
 
     .pagos div {
         width: 30rem;
+
     }
 
+    .contenedor-resp {
+        display: none;
+    }
 }
 
 
@@ -799,8 +918,17 @@ footer ul {
 }
 
 
-
-
+@media (max-width: 767px) {
+    .contenedor-desktop {
+        display: none;
+    }
+    
+    .img-responsive-carrusel img{
+        height: 50rem;
+        width: 35rem;
+    }
+    
+} 
  
 
 
