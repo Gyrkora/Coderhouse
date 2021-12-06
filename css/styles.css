@@ -637,19 +637,19 @@ footer ul {
 /* bootstrap en maceteros */
 
 .container {
-    margin: 5rem !important;
+    margin: 5rem 0 !important;
 }
 
 
 .card {
-    width: 25rem !important;
+    max-width: 25rem !important;
     align-items: center !important;
     transition: all .5s ease-in-out;
     
 }
 
 .card img {   
-    width: 20rem;
+    max-width: 20rem;
     height: 30rem;
 }
 
@@ -668,7 +668,7 @@ footer ul {
 
 
 .maceteros-gap {
-    grid-row-gap: 5rem;
+    grid-row-gap: 4rem;
 }
 
 
