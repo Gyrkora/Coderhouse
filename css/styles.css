@@ -352,9 +352,9 @@ footer ul {
 
 .contenedor-plantas {
     text-align: center;
-  
-    
+    margin: 0 auto;  
 }
+
 
 
 .contenedor-plantas img {
@@ -379,7 +379,10 @@ footer ul {
     text-align: center;
     background-color: var(--color2);
     padding: 3rem 0;
+    margin: 5rem 0 0 0;
 }
+
+
 
 .extras__imgs {
     display: grid;
@@ -388,6 +391,7 @@ footer ul {
     margin: 5rem auto;
     justify-content: center;
     grid-gap: .5rem;
+    
     
 
     grid-template-areas: 
@@ -520,23 +524,20 @@ footer ul {
 
 .pagos div {
     
-    /* width: 20rem; */
     display: block;
     width: 100%;
     height: 20rem;
     padding: 2rem;
     border-radius: 50px 27px 50px 27px ;
     border: 5px solid var(--tierraOscuro);
-    transition: all .5s ease-in-out;
+    /* transition: all .5s ease-in-out; */
 }
 
-.pagos div:hover {
-    background-color:var(--color3);
-    transform: scale(1.1) rotate(2deg);
-
-    
+/* .pagos div:hover {
+    background-color:var(--color3); 
+    transform: scale(.9);
    
-}
+} */
 
 .pagos i {
     font-size: 5rem;
@@ -623,9 +624,6 @@ footer ul {
 
 /* bootstrap en maceteros */
 
-.container {
-    margin: 5rem 0 !important;
-}
 
 
 .card {
@@ -655,7 +653,14 @@ footer ul {
 
 
 .maceteros-gap {
-    grid-row-gap: 4rem;
+    
+    grid-row-gap: 5rem;
+    grid-column-gap: 6rem;
+   
+}
+
+.contenedor-cards {
+    margin: 5rem auto;
 }
 
 
@@ -663,12 +668,12 @@ footer ul {
 
 
 
-/* ------------------------ MODIFICACIONES BOOTSTRAP ------------------------------ */
+/* ------------------------ MODIFICACIONES BOOTSTRAP GENERALES------------------------------ */
 
 
 .container {
  
-        width: 100%;
+    width: 100%;
 }
 
 
@@ -677,6 +682,7 @@ footer ul {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    
     
 }
 
@@ -738,13 +744,27 @@ footer ul {
     
   }
 
-
   .carousel2 {
       position: relative;
   }
 
 
 
+  @media (min-width: 1200px) {
+    .container-xl, .container-lg, .container-md, .container-sm, .container {
+      max-width: 960px !important;
+    }
+  }
+  @media (min-width: 1400px) {
+    .container-xxl, .container-xl, .container-lg, .container-md, .container-sm, .container {
+      max-width: 1200px !important;
+    }
+  }
+
+
+  .contenedor-desktop {
+      max-width: 130rem !important;
+  }
 
 
 
@@ -762,9 +782,12 @@ footer ul {
     /* first section responsive */
     .contenedor-plantas__divs {
         display: grid;
-        grid-template-columns: repeat(4, 1fr); 
-        
-        }
+        grid-template-columns: repeat(4, 1fr);  
+        margin: 3rem 0 0 0;
+ }
+
+
+
 
     /* second section responsive*/
     .extras__imgs {
@@ -820,6 +843,18 @@ footer ul {
     .maceteros__contenido--index:hover .btn--extras, .sustratos__contenido--index:hover .btn--extras {
         transform: translateX(20px) scale(2);
         transform-origin: left;
+    }
+
+    /* Pagos --index */
+    .pagos div {
+    
+        transition: all .5s ease-in-out;
+    }
+    
+    .pagos div:hover {
+        background-color:var(--color3); 
+        transform: scale(.9);
+       
     }
 
 
