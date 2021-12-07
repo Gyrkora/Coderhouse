@@ -50,7 +50,7 @@ body {
     padding: 0;
     font-size: 1.6rem !important;
     line-height: 2;
-    /* background-color: var(--grisOscuro) !important; */
+    
     
 }
 
@@ -76,11 +76,9 @@ h2, h1 {
     font-weight: bold;
     font-size: 3rem;
     color: var(--tierraOscuro);
-    /* transition: 2s ease-in-out; */
     animation: example 2s;
     margin: 4rem 0 0 0;
-    /* animation-duration: 2s; */
-    /* transform-origin: left; */
+    
 }
   @keyframes example {
       20% {
@@ -185,9 +183,6 @@ nav ul li {
 }
 
 
-/* nav ul li {
-    flex-basis: calc(50% - 2rem);
-} */
 
 nav ul li a {
     display: inline-block;
@@ -198,7 +193,6 @@ nav ul li a {
 nav a:hover {
     background-color: var(--color1);
     transition: background-color .3s ease;
-    /* padding: 2rem 4rem; */
     color: var(--tierraOscuro);
     
 }
@@ -243,8 +237,7 @@ nav ul li img {
     
     background-color: var(--color1);
     text-align: center;
-    padding-left: 1rem;
-    padding-bottom: 1rem;
+    padding: 1rem 0 2rem 1rem;
     
 }
 
@@ -355,8 +348,6 @@ footer ul {
     margin: 0 auto;  
 }
 
-
-
 .contenedor-plantas img {
     transition: .5s ease; 
     opacity: 1;
@@ -466,7 +457,7 @@ footer ul {
 
 .encuentranos {
     padding: 0 0 0 0;
-    /* background-color: #ddb4ac; */
+  
 }
 
 
@@ -502,7 +493,7 @@ footer ul {
     text-align: center;
     line-height: 1.5;
     font-size: 2rem;
-    /* position: absolute;  */
+    
 
  
 }
@@ -530,14 +521,10 @@ footer ul {
     padding: 2rem;
     border-radius: 50px 27px 50px 27px ;
     border: 5px solid var(--tierraOscuro);
-    /* transition: all .5s ease-in-out; */
+    
 }
 
-/* .pagos div:hover {
-    background-color:var(--color3); 
-    transform: scale(.9);
-   
-} */
+
 
 .pagos i {
     font-size: 5rem;
@@ -560,7 +547,7 @@ footer ul {
     animation: mymove 2s;
     animation-delay: 1s;
     animation-fill-mode: both;
-    /* transition: transform 5s  ease-in-out; */
+  
   }
   
   @keyframes mymove {
@@ -611,7 +598,6 @@ footer ul {
 
 .btn--formulario {
     background-color: var(--color1);
-    /* border: 2px solid var(--tierraOscuro); */
     color: black;
 }
 
@@ -623,8 +609,6 @@ footer ul {
 /* ------ Maceteros --------- */
 
 /* bootstrap en maceteros */
-
-
 
 .card {
     max-width: 25rem !important;
