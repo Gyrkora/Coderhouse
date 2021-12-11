@@ -161,7 +161,7 @@ img {
     font-weight: bold;
 } 
 
-nav {
+.nav--menu {
     background-color: var(--color2);
     font-family: var(--fuenteParrafos);
     /* text-align: center; */
@@ -169,7 +169,7 @@ nav {
     margin: 0;
 } 
 
-nav ul {
+.nav--menu ul {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -178,31 +178,31 @@ nav ul {
     gap: 5rem;
 }
 
-nav ul li {
+.nav--menu ul li {
     text-align: center;
 }
 
 
 
-nav ul li a {
+.nav--menu ul li a {
     display: inline-block;
     padding: 1rem;
 }
 
 
-nav a:hover {
+.nav--menu a:hover {
     background-color: var(--color1);
     transition: background-color .3s ease;
     color: var(--tierraOscuro);
     
 }
 
-nav ul {
+.nav--menu ul {
     background-color: var(--color2);
 
 }
 
-nav ul li img {
+.nav--menu ul li img {
     height: 20px;
     width: 20px;
 }
@@ -220,6 +220,15 @@ nav ul li img {
     
 }
 
+
+/* PAGINATION */
+
+
+.pagination--propia {
+    justify-content: center;
+    margin-bottom: 3rem !important;
+    gap: 1rem;
+}
 
 
 /* --FOOTER-- */
@@ -712,8 +721,6 @@ footer ul {
   display: inline-block;
   width: 2rem;
   height: 2rem;
-  background-repeat: no-repeat;
-  background-position: 50%;
   background-size: 100% 100%;
 }
 
@@ -731,6 +738,26 @@ footer ul {
   .carousel2 {
       position: relative;
   }
+
+  /* pagination bs */
+
+  .page-link {
+    color: #0d6efd;
+    text-decoration: none;
+    background-color: #fff;
+    border: 1px solid var(--tierraOscuro) !important;;
+  }
+
+  .page-link:hover {
+    color: white !important;
+    background-color: var(--tierraOscuro);
+    border-color: var(--color4) !important;
+  }
+
+  .page-link {
+    padding: .5rem 1rem !important;
+  }
+
 
 
 
