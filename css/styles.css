@@ -164,7 +164,6 @@ img {
 .nav--menu {
     background-color: var(--color2);
     font-family: var(--fuenteParrafos);
-    /* text-align: center; */
     padding: 0;
     margin: 0;
 } 
@@ -175,7 +174,6 @@ img {
     align-items: center;
     text-align: center;
     margin: 0 auto; 
-    gap: 5rem;
 }
 
 .nav--menu ul li {
@@ -628,7 +626,7 @@ footer ul {
 
 .card img {   
     max-width: 20rem;
-    height: 30rem;
+    height: 25rem;
 }
 
 
@@ -789,6 +787,10 @@ footer ul {
 
 
 @media (min-width: 1080px){
+
+    .nav--menu ul {
+        gap: 5rem;
+    }
 
     /* first section responsive */
     .contenedor-plantas__divs {
