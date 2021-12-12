@@ -1,16 +1,12 @@
 
 /* El código está ordenado según secciones y páginas específicas. Las secciones son del index */
 
-
-/* @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap'); */
-/* @import url('https://fonts.googleapis.com/css2?family=Lobster&family=Roboto+Condensed&display=swap'); */
-/* @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap'); */ /*  font-family: 'Raleway', sans-serif */
 @import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@300&display=swap');
 :root { 
 
     
     /* --- FUENTES --- */
-    --fuenteHeading: /* 'Lobster', cursive, sans-serif, Arial, Helvetica, sans-serif; */  'Inconsolata', monospace;
+    --fuenteHeading:  'Inconsolata', monospace;
     --fuenteParrafos: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
     
     /* --- PALETAS --- */
@@ -49,12 +45,8 @@ body {
     margin: 0;
     padding: 0;
     font-size: 1.6rem !important;
-    line-height: 2;
-    
-    
+    line-height: 2;  
 }
-
-
 
 
 a {
@@ -94,14 +86,8 @@ h2, h1 {
           color: var(--tierraOscuro);
           
       }
-
-
     
 }
-
-   
-
-
 
 h4 {
     font-size: 2rem;
@@ -132,6 +118,9 @@ img {
     
 }
 
+
+    
+
 /* --------------------------------- ALL PAGES -------------------------------------------- */
 
 /* --- Header --- */
@@ -141,6 +130,7 @@ img {
     display: block;
     text-align: center;
     background-color: var(--color1);
+    
 }
 
 .logo img {
@@ -148,10 +138,37 @@ img {
     margin-top: 1rem;
     height: 10rem;
     width: 15rem;
-   
+    margin-bottom: 1rem;
+}
 
+.logo--index {
+    position: relative;
+    animation: animation-logo 2s;
+    animation-fill-mode: both;
+    margin-bottom: 1rem;
 
 }
+
+@keyframes animation-logo {
+    50% {transform: rotate(10deg);}
+    70% {transform: rotate(-20deg); z-index: 1;}
+    85% { transform: rotate(10deg);}
+    100% { transform: rotate(0);}
+    }
+
+    .logo--arriba {
+        position: relative;
+        animation: animation-logo-arriba 1s;
+        animation-fill-mode: both;
+        margin-bottom: 1rem;
+    }
+    
+    @keyframes animation-logo-arriba {
+        50% {transform: translateY(0px);}
+        100% { transform: translateY(10px);}
+        }
+
+
 
 /* --- NAVEGACIÓN --- */
 
@@ -272,8 +289,6 @@ img {
 }
 
 
-
-
 footer ul {
     line-height: 2;
     margin: 0;
@@ -293,13 +308,8 @@ footer ul {
 .fa-arrow-circle-up {
     font-size: 5rem;
     margin: 2rem 0;
-    
- 
-    
+     
 }
-
-
-
 
 
 .fa-whatsapp {
@@ -527,26 +537,33 @@ footer ul {
     height: 20rem;
     padding: 2rem;
     border-radius: 50px 27px 50px 27px ;
-    /* border: 5px solid var(--tierraOscuro); */
     
 }
 
 
-
-.pagos i {
-    font-size: 5rem;
-    z-index: 1;
-    color: var(--tierraOscuro);
-    line-height: 2 ;
-}
-
 .pagos img {
     width: 100%;
     height: 100%;
-    max-width: 40rem;
-    max-height: 30rem;
+    max-width: 30rem;
+    max-height: 20rem;
 }
 
+.pagos div {
+          
+    position: relative;
+    animation: pagosdiv 2s;
+    animation-delay: 1s;
+    animation-fill-mode: both;
+
+}
+
+@keyframes pagosdiv {
+    50% {transform: rotate(-20deg); font-size: 2rem; color: red;}
+    60% { transform: rotate(-10deg); color: orange;}
+    70% {transform: rotate(20deg); font-size: 4rem; }
+    85% {color: rgb(94, 91, 65);}
+    100% {top: 0px; font-size: 3rem; color: rgb(180, 164, 14); border: 2px solid var(--verdeClaro)}
+    }
 
 
 /* ---------------- CONTACTO ------------------- */
@@ -616,8 +633,6 @@ footer ul {
 
 
 
-
-
 /* ------ Maceteros --------- */
 
 /* bootstrap en maceteros */
@@ -661,14 +676,10 @@ footer ul {
 
 
 
-
-
-
 /* ------------------------ MODIFICACIONES BOOTSTRAP GENERALES------------------------------ */
 
 
 .container {
- 
     width: 100%;
 }
 
@@ -678,55 +689,7 @@ footer ul {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    
-    
 }
-
-.carousel-control-prev,
-.carousel-control-next {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  z-index: 1;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 15%;
-  padding: 0;
-  color: #fff;
-  text-align: center;
-  background: none;
-  border: 0;
-  opacity: 0.5;
-  transition: opacity 0.15s ease;
-}
-
-
-.carousel-control-prev:hover, .carousel-control-prev:focus,
-.carousel-control-next:hover,
-.carousel-control-next:focus {
-  color: #fff;
-  text-decoration: none;
-  outline: 0;
-  opacity: 0.9;
-}
-
-.carousel-control-prev {
-  left: 0;
-}
-
-.carousel-control-next {
-  right: 0;
-}
-
-.carousel-control-prev-icon,
-.carousel-control-next-icon {
-  display: inline-block;
-  width: 2rem;
-  height: 2rem;
-  background-size: 100% 100%;
-}
-
 
 .carousel-control-prev-icon {
     background-image: url("/arrow-circle-left-solid.svg");
@@ -734,7 +697,6 @@ footer ul {
   
 .carousel-control-next-icon {
     background-image: url("/arrow-circle-right-solid.svg");
-    
     
   }
 
@@ -784,9 +746,6 @@ footer ul {
 
 
 
-
-
-
 /* --------------------------------- RESPONSIVE SECTION ------------------------------------ */
 
 
@@ -829,7 +788,6 @@ footer ul {
       
         transform: scale(1.1); 
         z-index: 1;
-        /* border: 5px solid var(--verdeOscuro); */
         -webkit-box-shadow: 0px 10px 13px -7px #000000, 5px 5px 16px 5px rgba(0,0,0,0); 
         box-shadow: 0px 10px 13px -7px #000000, 5px 5px 16px 5px rgba(0,0,0,0);
         transform: translateY(-10px);
@@ -863,17 +821,24 @@ footer ul {
         transform-origin: left;
     }
 
-    /* Pagos --index */
+    
     .pagos div {
-    
         transition: all .5s ease-in-out;
+
     }
     
+
     .pagos div:hover {
-        background-color:var(--color3); 
-        transform: scale(.9);
-       
+        transform: rotate(2deg) scale(1.1);
+        background-color: var(--color2); 
+        
     }
+    
+
+
+
+    
+    
 
 
     /* footer */
@@ -939,6 +904,8 @@ footer ul {
     .imagen4 {
         display: none; 
     } 
+
+    
 
 }
 
