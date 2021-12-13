@@ -702,11 +702,11 @@ footer ul {
 
 
 .carousel-control-prev-icon {
-    background-image: url("/arrow-circle-left-solid.svg");
+    background-image: url("img/arrow-circle-left-solid.svg");
   }
   
 .carousel-control-next-icon {
-    background-image: url("/arrow-circle-right-solid.svg");
+    background-image: url("img/arrow-circle-right-solid.svg");
     
   }
 
