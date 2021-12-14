@@ -110,6 +110,7 @@ img {
     font-style: italic;
 }
 
+/* mixin */
 .btn {
     display: block;
     padding: 1rem 3rem;

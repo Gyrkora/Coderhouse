@@ -1,3 +1,4 @@
+@charset "UTF-8";
 ul {
   background-color: red; }
   ul li {
@@ -8,3 +9,95 @@ ul {
 
 body {
   background-color: red; }
+
+/* --- Header --- */
+.logo--nav {
+  display: block;
+  text-align: center;
+  background-color: var(--color1); }
+
+.logo img {
+  margin-top: 1rem;
+  height: 10rem;
+  width: 15rem;
+  margin-bottom: 1rem; }
+
+.logo--index {
+  position: relative;
+  animation: animation-logo 2s;
+  animation-fill-mode: both;
+  margin-bottom: 1rem; }
+
+@keyframes animation-logo {
+  50% {
+    transform: rotate(10deg); }
+  70% {
+    transform: rotate(-20deg);
+    z-index: 1; }
+  85% {
+    transform: rotate(10deg); }
+  100% {
+    transform: rotate(0); } }
+
+.logo--arriba {
+  position: relative;
+  animation: animation-logo-arriba 1s;
+  animation-fill-mode: both;
+  margin-bottom: 1rem; }
+
+@keyframes animation-logo-arriba {
+  50% {
+    transform: translateY(0px); }
+  100% {
+    transform: translateY(10px); } }
+
+/* --- NAVEGACIÓN --- */
+.compras {
+  padding: .5rem;
+  font-weight: bold; }
+
+.nav--menu {
+  background-color: var(--color2);
+  font-family: var(--fuenteParrafos);
+  padding: 0;
+  margin: 0; }
+
+.nav--menu ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 0 auto; }
+
+.nav--menu ul li {
+  text-align: center; }
+
+.nav--menu ul li a {
+  display: inline-block;
+  padding: 1rem; }
+
+.nav--menu a:hover {
+  background-color: var(--color1);
+  transition: background-color .3s ease;
+  color: var(--tierraOscuro); }
+
+.nav--menu ul {
+  background-color: var(--color2); }
+
+.nav--menu ul li img {
+  height: 20px;
+  width: 20px; }
+
+/* --- TERMINA NAVEGACIÓN --- */
+/* --- HERO --- */
+.hero {
+  background-image: url(../img/background4.jpg);
+  background-size: cover;
+  background-position: center center;
+  height: 40rem; }
+
+/* PAGINATION */
+.pagination--propia {
+  justify-content: center;
+  margin-bottom: 3rem !important;
+  gap: 1rem; }
