@@ -1,5 +1,7 @@
 @charset "UTF-8";
 /* Globales */
+/* paleta  de colores*/
+/* variables responsive */
 @import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@300&display=swap");
 :root {
   /* --- FUENTES --- */
@@ -24,6 +26,8 @@
 /* paleta  de colores*/
 /* variables responsive */
 /* ---------------------------- Globales ------------------------------ */
+/* paleta  de colores*/
+/* variables responsive */
 html {
   box-sizing: border-box;
   font-size: 62.5%;
@@ -87,6 +91,8 @@ img {
   color: white; }
 
 /* ------------------------ MODIFICACIONES BOOTSTRAP GENERALES------------------------------ */
+/* paleta  de colores*/
+/* variables responsive */
 .container {
   width: 100%; }
 
@@ -223,6 +229,8 @@ img {
     width: 15rem; } }
 
 /* --FOOTER-- */
+/* paleta  de colores*/
+/* variables responsive */
 .elementos-footer {
   display: grid;
   grid-template-columns: 30% 35% 35%;
@@ -287,6 +295,8 @@ footer ul {
 
 /* pages */
 /* ---------------- INDEX ------------------- */
+/* paleta  de colores*/
+/* variables responsive */
 /* ---FIRST SECTION = CONTENEDOR-PLANTAS ---*/
 .contenedor-plantas {
   text-align: center;
@@ -444,6 +454,8 @@ footer ul {
 
 /* ------ Maceteros --------- */
 /* bootstrap en maceteros */
+/* paleta  de colores*/
+/* variables responsive */
 .card {
   max-width: 25rem !important;
   align-items: center !important;
@@ -476,6 +488,8 @@ footer ul {
   margin-bottom: 3rem !important;
   gap: 1rem; }
 
+/* paleta  de colores*/
+/* variables responsive */
 .fa-map-marker-alt {
   font-size: 1rem;
   color: #b4a40e;
