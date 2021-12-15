@@ -1,34 +1,32 @@
 @charset "UTF-8";
-ul {
-  background-color: red; }
-  ul li {
-    color: green; }
-    ul li a {
-      font-size: 3rem;
-      background-color: black; }
-
-body {
-  background-color: red; }
-
 /* --- Header --- */
-.logo--nav {
-  display: block;
-  text-align: center;
-  background-color: var(--color1); }
-
+/* paleta  de colores*/
 .logo img {
   margin-top: 1rem;
   height: 10rem;
   width: 15rem;
   margin-bottom: 1rem; }
 
+.logo--nav {
+  background-color: #A4BF69;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 5rem; }
+  .logo--nav img {
+    width: 10rem;
+    height: 7rem; }
+
+.carrito--responsive {
+  font-size: 4rem; }
+
 .logo--index {
   position: relative;
-  animation: animation-logo 2s;
-  animation-fill-mode: both;
-  margin-bottom: 1rem; }
+  margin-bottom: 1rem;
+  animation: animation-logo-index 2s;
+  animation-fill-mode: both; }
 
-@keyframes animation-logo {
+@keyframes animation-logo-index {
   50% {
     transform: rotate(10deg); }
   70% {
@@ -41,9 +39,9 @@ body {
 
 .logo--arriba {
   position: relative;
+  margin-bottom: 1rem;
   animation: animation-logo-arriba 1s;
-  animation-fill-mode: both;
-  margin-bottom: 1rem; }
+  animation-fill-mode: both; }
 
 @keyframes animation-logo-arriba {
   50% {
@@ -57,36 +55,28 @@ body {
   font-weight: bold; }
 
 .nav--menu {
-  background-color: var(--color2);
+  background-color: #D3D9A7;
   font-family: var(--fuenteParrafos);
   padding: 0;
   margin: 0; }
-
-.nav--menu ul {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  margin: 0 auto; }
-
-.nav--menu ul li {
-  text-align: center; }
-
-.nav--menu ul li a {
-  display: inline-block;
-  padding: 1rem; }
-
-.nav--menu a:hover {
-  background-color: var(--color1);
-  transition: background-color .3s ease;
-  color: var(--tierraOscuro); }
-
-.nav--menu ul {
-  background-color: var(--color2); }
-
-.nav--menu ul li img {
-  height: 20px;
-  width: 20px; }
+  .nav--menu ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 0 auto; }
+    .nav--menu ul li {
+      text-align: center; }
+      .nav--menu ul li img {
+        height: 20px;
+        width: 20px; }
+      .nav--menu ul li a {
+        display: inline-block;
+        padding: 1rem; }
+        .nav--menu ul li a:hover {
+          background-color: #A4BF69;
+          transition: background-color .3s ease;
+          color: var(--tierraOscuro); }
 
 /* --- TERMINA NAVEGACIÓN --- */
 /* --- HERO --- */
@@ -96,8 +86,15 @@ body {
   background-position: center center;
   height: 40rem; }
 
-/* PAGINATION */
-.pagination--propia {
-  justify-content: center;
-  margin-bottom: 3rem !important;
-  gap: 1rem; }
+/* media header */
+@media (min-width: 992px) {
+  .logo--nav {
+    display: block;
+    text-align: center; }
+  .carrito--responsive {
+    display: none; }
+  .logo--nav img {
+    height: 10rem;
+    width: 15rem; } }
+
+/* paleta  de colores*/

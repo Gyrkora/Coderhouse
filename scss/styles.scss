@@ -1,15 +1,1 @@
-ul {
-    background-color: red;
-    
-    li {
-        color: green;
-    
-            a {
-            font-size: 3rem;
-            background-color: black;
-            }
-        }
-    
-    }
-
-    @import "generales", "header";
+    @import "header", "variables";
