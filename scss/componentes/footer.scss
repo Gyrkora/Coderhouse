@@ -1,0 +1,99 @@
+/* --FOOTER-- */
+
+
+.elementos-footer {
+ 
+    display: grid;
+    grid-template-columns: 30% 35% 35%;
+    grid-template-rows: 38% 31% 31%;
+    grid-template-areas:
+    "contacto productos  social-media"
+    "contacto productos  flechita"
+    "logo  productos  flechita";
+    
+    background-color: var(--color1);
+    text-align: center;
+    padding: 1rem 0 2rem 1rem;
+    
+}
+
+
+.div-logo--footer {
+    grid-area: logo;
+}
+.div-productos {
+    grid-area: productos;
+}
+.div-contacto {
+    grid-area: contacto;
+
+}
+.div-flechita {
+    grid-area: flechita;
+}
+
+
+.div-social-media {
+    text-align: center;
+    grid-area: social-media;
+}
+
+
+footer ul {
+    line-height: 2;
+    margin: 0;
+    padding: 0;
+    
+}
+
+.footer__iconos {
+    font-size: 3rem;
+    padding: 1rem;
+}
+
+.footer__iconos i:hover {
+    cursor: pointer;
+}
+
+.fa-arrow-circle-up {
+    font-size: 5rem;
+    margin: 2rem 0;
+     
+}
+
+
+.fa-whatsapp {
+    font-size: 2rem;
+    color: var(--color4);
+}
+
+
+
+
+/* pagos footer */
+
+.footer__iconos--pago {
+    display: block;
+    text-align: center;
+    background-color: var(--color4);
+}
+
+
+.footer__iconos--pago img {
+    height: 3rem;
+    width: 5rem;
+    background-color: white;
+    border: 1px solid black;
+}
+
+.visa {
+    margin-right: 2rem;
+}
+
+
+.referencia {
+    margin-left: 2rem;
+    color:var(--color2);
+
+}
+

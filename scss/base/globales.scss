@@ -1,0 +1,89 @@
+/* ---------------------------- Globales ------------------------------ */
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5% ;
+    scroll-behavior: smooth;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 1.6rem !important;
+    line-height: 2;  
+}
+
+
+a {
+    text-decoration: none !important;
+    color: inherit !important;
+
+}
+
+.centrar-texto {
+    text-align: center;
+}
+
+ul {
+    list-style-type: none;
+}
+
+h2, h1 {
+    font-family: var(--fuenteHeading);
+    font-weight: bold;
+    font-size: 3rem;
+    color: var(--tierraOscuro);
+    animation: example 2s;
+    margin: 4rem 0 0 0;
+    
+}
+  @keyframes example {
+      20% {
+          color: var(--color4);     
+      }
+
+      50% {
+          color: var(--tierraClaro);
+          
+      }
+
+      100% {
+          color: var(--tierraOscuro);
+          
+      }
+    
+}
+
+h4 {
+    font-size: 2rem;
+}
+
+img {
+    max-width: 100%;
+   
+}
+
+.en-negrita {
+    font-weight: bold;
+}
+
+.no-margin {
+    margin: 0;
+}
+
+.en-cursiva {
+    font-style: italic;
+}
+
+/* mixin */
+.btn {
+    display: block;
+    padding: 1rem 3rem;
+    font-size: 1.6rem;
+    color: white;
+    
+}

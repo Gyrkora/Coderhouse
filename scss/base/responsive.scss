@@ -1,0 +1,220 @@
+
+
+/* --------------------------------- RESPONSIVE SECTION ------------------------------------ */
+
+
+
+@media (min-width: 1080px){
+
+    .nav--menu ul {
+        gap: 5rem;
+    }
+
+    /* first section responsive */
+    .contenedor-plantas__divs {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);  
+        margin: 3rem 0 0 0;
+ }
+
+
+
+
+    /* second section responsive*/
+    .extras__imgs {
+        max-width: 120rem;
+        width: 90%;
+        grid-template-columns: 25% 25% 50%;
+        grid-template-rows: 20rem 35rem;
+        grid-template-areas: 
+        "medicinales almacigos maceteros maceteros"
+        "sustratos sustratos maceteros maceteros";
+        
+    }
+
+    /* animaciones */
+    .almacigos, .maceteros, .sustratos, .medicinales {
+        transition: all .5s ease-in-out;
+        
+    }
+  
+    .almacigos:hover, .maceteros:hover, .sustratos:hover, .medicinales:hover {
+      
+        transform: scale(1.1); 
+        z-index: 1;
+        -webkit-box-shadow: 0px 10px 13px -7px #000000, 5px 5px 16px 5px rgba(0,0,0,0); 
+        box-shadow: 0px 10px 13px -7px #000000, 5px 5px 16px 5px rgba(0,0,0,0);
+        transform: translateY(-10px);
+
+    }
+
+    .maceteros:hover {
+        transform: translate(10px); 
+ 
+    }
+
+    .sustratos:hover {
+        transform: translateX(-10px);
+    }
+
+    .medicinales__contenido--index .btn--extras, .almacigos__contenido--index .btn--extras {
+        transition: all .5s ease-in-out;
+    }
+
+    .medicinales__contenido--index:hover .btn--extras, .almacigos__contenido--index:hover .btn--extras {
+        transform: translateX(30%) translateY(-100%) scale(1.5);
+    }
+
+
+    .maceteros__contenido--index .btn--extras, .sustratos__contenido--index .btn--extras {
+        transition: all .5s ease-in-out;
+    }
+
+    .maceteros__contenido--index:hover .btn--extras, .sustratos__contenido--index:hover .btn--extras {
+        transform: translateX(20px) scale(2);
+        transform-origin: left;
+    }
+
+    
+    .pagos div {
+        transition: all .5s ease-in-out;
+
+    }
+    
+
+    .pagos div:hover {
+        transform: rotate(2deg) scale(1.1);
+        background-color: var(--color2); 
+        
+    }
+    
+
+
+
+    
+    
+
+
+    /* footer */
+    .footer__iconos--pago {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 2rem;
+        padding: 1rem 0;
+        
+    }
+
+    /* nueva-ola (third section responsive) */
+    .nueva-ola {
+        background-image: url(../img/nuevaola.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+    }
+
+
+    /* contacto page */
+
+    .nombre-apellido {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    
+
+    
+
+    .tres-columnas {
+        display: flex;
+        align-items: flex-end;
+        flex-wrap: nowrap;
+    }
+
+
+    .card:hover {
+        background-color: rgb(165, 152, 152);
+        cursor: pointer;
+        transform: scale(1.1);
+    }
+
+
+    
+    
+}
+
+
+
+@media (min-width: 768px) and (max-width: 1079px)  {
+       
+    /* first section responsive*/
+    .contenedor-plantas__divs {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+       
+
+    }
+    .imagen4 {
+        display: none; 
+    } 
+
+    
+
+}
+
+
+@media (min-width: 768px) {
+    /* footer */
+    .elementos-footer {
+        padding: 2rem 0;
+        display: flex;
+        justify-content: space-evenly;
+       
+    }  
+
+    /* fourth section = pagos--index */
+    .pagos { 
+        gap: 5rem;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+ 
+    }
+
+    .pagos div {
+        width: 30rem;
+
+    }
+
+    .contenedor-resp {
+        display: none;
+    }
+}
+
+
+/* max-width */
+
+/* responsive contacto */
+
+@media (max-width: 1070px) {
+    .planta-animada {
+        display: none;
+    }
+}
+
+
+@media (max-width: 767px) {
+    .contenedor-desktop {
+        display: none;
+    }
+    
+    .img-responsive-carrusel img{
+        height: 50rem;
+        width: 35rem;
+    }
+    
+} 
+ 
+
+

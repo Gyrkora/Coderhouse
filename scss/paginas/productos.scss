@@ -1,0 +1,44 @@
+/* ------ Maceteros --------- */
+
+/* bootstrap en maceteros */
+
+
+
+.card {
+    max-width: 25rem !important;
+    align-items: center !important;
+    transition: all .5s ease-in-out;
+    width: 30rem !important;
+    padding: 1rem 0 0 0;
+}
+
+.card img {   
+    max-width: 20rem;
+    height: 25rem;
+}
+
+
+  .col {
+      display: flex;
+      justify-content: center !important;
+      align-items: center !important;
+  }
+
+
+ .btn-primary {
+     background-color: var(--tierraOscuro) !important;
+     color: white !important;
+ }
+
+
+.maceteros-gap {
+    
+    grid-row-gap: 5rem;
+    grid-column-gap: 6rem;
+   
+}
+
+.contenedor-cards {
+    margin: 5rem auto;
+    text-align: center;
+}

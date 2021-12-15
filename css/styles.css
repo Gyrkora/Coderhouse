@@ -228,13 +228,13 @@ img {
 
 /* --- HERO --- */
 
-.hero {
+/* .hero {
     background-image: url(../img/background4.jpg);
     background-size: cover;
     background-position: center center;
     height: 40rem;
     
-}
+} */
 
 
 /* PAGINATION */
@@ -265,8 +265,6 @@ img {
     padding: 1rem 0 2rem 1rem;
     
 }
-
-
 
 
 .div-logo--footer {
