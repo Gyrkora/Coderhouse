@@ -1,1 +1,18 @@
-    @import "header", "variables";
+
+ /* Globales */
+@import '../scss/base/root.scss';
+@import '../scss/base/variables.scss';
+@import '../scss/base/globales.scss';
+@import '../scss/base/mod-bs.scss';
+
+
+/* componentes */
+@import "../scss/componentes/header.scss";
+@import '../scss/componentes/footer.scss';
+
+/* pages */
+@import '../scss/paginas/index.scss';
+@import "../scss/paginas/productos.scss";
+@import "../scss/paginas/contacto.scss";
+
+@import '../scss/base/responsive.scss';

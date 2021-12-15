@@ -1,6 +1,131 @@
 @charset "UTF-8";
+/* Globales */
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@300&display=swap");
+:root {
+  /* --- FUENTES --- */
+  --fuenteHeading:  'Inconsolata', monospace;
+  --fuenteParrafos: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  /* --- PALETAS --- */
+  --verdeOscuro: #668C4A;
+  --verdeClaro: #A6BF4B;
+  --grisClaro: #F2F0D5;
+  --amarillo: #F2C53D;
+  --grisOscuro: #B1B1AC;
+  --tierraOscuro: #733B2F;
+  --tierraClaro: #BF9D7E;
+  --color1: #A4BF69;
+  --color2: #D3D9A7;
+  --color3: #5E8C30;
+  --color4: #34592E;
+  --color5: #141E26;
+  --color6: #233747;
+  --color7: #dbbb51; }
+
+/* paleta  de colores*/
+/* variables responsive */
+/* ---------------------------- Globales ------------------------------ */
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+  scroll-behavior: smooth; }
+
+*, *::before, *::after {
+  box-sizing: inherit; }
+
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 1.6rem !important;
+  line-height: 2; }
+
+a {
+  text-decoration: none !important;
+  color: inherit !important; }
+
+.centrar-texto {
+  text-align: center; }
+
+ul {
+  list-style-type: none; }
+
+h2, h1 {
+  font-family: var(--fuenteHeading);
+  font-weight: bold;
+  font-size: 3rem;
+  color: var(--tierraOscuro);
+  animation: example 2s;
+  margin: 4rem 0 0 0; }
+
+@keyframes example {
+  20% {
+    color: var(--color4); }
+  50% {
+    color: var(--tierraClaro); }
+  100% {
+    color: var(--tierraOscuro); } }
+
+h4 {
+  font-size: 2rem; }
+
+img {
+  max-width: 100%; }
+
+.en-negrita {
+  font-weight: bold; }
+
+.no-margin {
+  margin: 0; }
+
+.en-cursiva {
+  font-style: italic; }
+
+/* mixin */
+.btn {
+  display: block;
+  padding: 1rem 3rem;
+  font-size: 1.6rem;
+  color: white; }
+
+/* ------------------------ MODIFICACIONES BOOTSTRAP GENERALES------------------------------ */
+.container {
+  width: 100%; }
+
+.carousel-control-prev-icon {
+  background-image: url("img/arrow-circle-left-solid.svg"); }
+
+.carousel-control-next-icon {
+  background-image: url("img/arrow-circle-right-solid.svg"); }
+
+.carousel2 {
+  position: relative; }
+
+/* pagination bs */
+.page-link {
+  color: #0d6efd;
+  text-decoration: none;
+  background-color: #fff;
+  border: 1px solid var(--tierraOscuro) !important;
+  padding: .5rem 1rem !important; }
+  .page-link:hover {
+    color: white !important;
+    background-color: var(--tierraOscuro);
+    border-color: var(--color4) !important; }
+
+@media (min-width: 1200px) {
+  .container-xl, .container-lg, .container-md, .container-sm, .container {
+    max-width: 960px !important; } }
+
+@media (min-width: 1400px) {
+  .container-xxl, .container-xl, .container-lg, .container-md, .container-sm, .container {
+    max-width: 1200px !important; } }
+
+.contenedor-desktop {
+  max-width: 130rem !important; }
+
+/* componentes */
 /* --- Header --- */
 /* paleta  de colores*/
+/* variables responsive */
 .logo img {
   margin-top: 1rem;
   height: 10rem;
@@ -97,4 +222,424 @@
     height: 10rem;
     width: 15rem; } }
 
+/* --FOOTER-- */
+.elementos-footer {
+  display: grid;
+  grid-template-columns: 30% 35% 35%;
+  grid-template-rows: 38% 31% 31%;
+  grid-template-areas: "contacto productos  social-media" "contacto productos  flechita" "logo  productos  flechita";
+  background-color: var(--color1);
+  text-align: center;
+  padding: 1rem 0 2rem 1rem; }
+
+.div-logo--footer {
+  grid-area: logo; }
+
+.div-productos {
+  grid-area: productos; }
+
+.div-contacto {
+  grid-area: contacto; }
+
+.div-flechita {
+  grid-area: flechita; }
+
+.div-social-media {
+  text-align: center;
+  grid-area: social-media; }
+
+footer ul {
+  line-height: 2;
+  margin: 0;
+  padding: 0; }
+
+.footer__iconos {
+  font-size: 3rem;
+  padding: 1rem; }
+  .footer__iconos i:hover {
+    cursor: pointer; }
+
+.fa-arrow-circle-up {
+  font-size: 5rem;
+  margin: 2rem 0; }
+
+.fa-whatsapp {
+  font-size: 2rem;
+  color: var(--color4); }
+
+/* pagos footer */
+.footer__iconos--pago {
+  display: block;
+  text-align: center;
+  background-color: var(--color4); }
+  .footer__iconos--pago img {
+    height: 3rem;
+    width: 5rem;
+    background-color: white;
+    border: 1px solid black; }
+
+.visa {
+  margin-right: 2rem; }
+
+.referencia {
+  margin-left: 2rem;
+  color: var(--color2); }
+
+/* pages */
+/* ---------------- INDEX ------------------- */
+/* ---FIRST SECTION = CONTENEDOR-PLANTAS ---*/
+.contenedor-plantas {
+  text-align: center;
+  margin: 0 auto; }
+  .contenedor-plantas img {
+    transition: .5s ease;
+    opacity: 1;
+    height: 30rem;
+    width: 25rem;
+    border: 0.5px solid var(--tierraClaro);
+    padding: .5rem;
+    background-color: var(--tierraClaro);
+    margin-top: 3rem; }
+    .contenedor-plantas img:hover {
+      opacity: 0.8;
+      cursor: pointer; }
+
+.contenedor-imagenes {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+
+/* ---- SECOND SECTION = diversidad de servicios ------- */
+.extras {
+  text-align: center;
+  background-color: var(--color2);
+  padding: 3rem 0;
+  margin: 5rem 0 0 0; }
+  .extras h2 {
+    color: var(--tierraOscuro); }
+
+.extras__imgs {
+  display: grid;
+  grid-row-gap: 1.5rem;
+  grid-column-gap: 1rem;
+  grid-template-columns: 49% 49%;
+  grid-template-rows: 20rem 35rem 40rem;
+  grid-template-areas: "medicinales almacigos" "sustratos sustratos" "maceteros maceteros";
+  margin: 5rem auto;
+  justify-content: center; }
+
+.btn--extras {
+  background-color: var(--tierraOscuro);
+  color: white;
+  display: inline;
+  cursor: pointer; }
+
+.almacigos__contenido--index, .maceteros__contenido--index, .sustratos__contenido--index, .medicinales__contenido--index {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-end;
+  position: absolute; }
+
+.almacigos, .maceteros, .sustratos, .medicinales {
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  width: 100%;
+  position: relative;
+  height: 100%; }
+
+.medicinales {
+  grid-area: medicinales;
+  background-image: url(../img/medicinales.jpg); }
+
+.almacigos {
+  grid-area: almacigos;
+  background-image: url(../img/almacigos.jpg); }
+
+.maceteros {
+  grid-area: maceteros;
+  background-image: url(../img/maceteros.jpg); }
+
+.sustratos {
+  grid-area: sustratos;
+  background-image: url(../img/fruto.jpeg); }
+
+/* ------- THIRD SECTION = Dónde encontrarnos ---------- */
+.encuentranos {
+  padding: 0 0 0 0; }
+
+.nueva-ola {
+  background-image: url(../img/planta55.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  height: 920px;
+  position: relative; }
+  .nueva-ola h3 {
+    color: white;
+    width: 18rem;
+    text-align: center;
+    line-height: 1.5;
+    font-size: 2rem; }
+
+.nueva-ola__contenido {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.2);
+  height: 100%;
+  width: 100%;
+  position: absolute; }
+
+/* --------- FOURTH SECTION = pagos--index  ------------- */
+.pagos {
+  margin: 7rem 0 10rem 0;
+  text-align: center;
+  gap: 2rem;
+  display: flex;
+  align-items: center !important;
+  justify-content: center !important;
+  flex-direction: column; }
+  .pagos div {
+    display: block;
+    width: 100%;
+    height: 20rem;
+    padding: 2rem;
+    border-radius: 50px 27px 50px 27px;
+    position: relative;
+    animation-name: pagosdiv;
+    animation-duration: 2s;
+    animation-delay: 1s;
+    animation-fill-mode: both; }
+
+@keyframes pagosdiv {
+  50% {
+    transform: rotate(-20deg);
+    font-size: 2rem;
+    color: red; }
+  60% {
+    transform: rotate(-10deg);
+    color: orange; }
+  70% {
+    transform: rotate(20deg);
+    font-size: 4rem; }
+  85% {
+    color: #5e5b41;
+    background-color: var(--color2); }
+  100% {
+    top: 0px;
+    font-size: 3rem;
+    color: var(--color4);
+    border: 2px solid var(--verdeClaro); } }
+  .pagos img {
+    width: 100%;
+    height: 100%;
+    max-width: 30rem;
+    max-height: 20rem; }
+
+/* ------ Maceteros --------- */
+/* bootstrap en maceteros */
+.card {
+  max-width: 25rem !important;
+  align-items: center !important;
+  transition: all .5s ease-in-out;
+  width: 30rem !important;
+  padding: 1rem 0 0 0; }
+  .card img {
+    max-width: 20rem;
+    height: 25rem; }
+
+.col {
+  display: flex;
+  justify-content: center !important;
+  align-items: center !important; }
+
+.btn-primary {
+  background-color: var(--tierraOscuro) !important;
+  color: white !important; }
+
+.maceteros-gap {
+  grid-row-gap: 5rem;
+  grid-column-gap: 6rem; }
+
+.contenedor-cards {
+  margin: 5rem auto;
+  text-align: center; }
+
+.pagination--propia {
+  justify-content: center;
+  margin-bottom: 3rem !important;
+  gap: 1rem; }
+
+.fa-map-marker-alt {
+  font-size: 1rem;
+  color: #b4a40e;
+  position: relative;
+  animation-name: location 2s;
+  animation-delay: 1s;
+  animation-fill-mode: both; }
+  .fa-map-marker-alt:hover {
+    transform: translateY(-5px) scale(1.5); }
+
+@keyframes location {
+  50% {
+    transform: rotate(-20deg);
+    font-size: 2rem;
+    color: red; }
+  60% {
+    transform: rotate(-10deg);
+    color: orange; }
+  70% {
+    transform: rotate(20deg);
+    font-size: 4rem; }
+  70% {
+    font-size: 5rem;
+    transform: translateY(-50px); }
+  85% {
+    color: #5e5b41; }
+  100% {
+    top: 0px;
+    font-size: 3rem;
+    color: #b4a40e; } }
+
+.formulario {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  max-width: 60rem;
+  width: 95%;
+  height: 80%;
+  padding: 2rem;
+  background-color: var(--color2);
+  border-radius: .5rem;
+  margin-bottom: 3rem; }
+  .formulario #nombre, .formulario #apellido {
+    width: 100%; }
+  .formulario #phone {
+    width: 100%; }
+  .formulario textarea {
+    height: 20rem;
+    width: 100%; }
+
+#nombre, #phone, #apellido {
+  height: 3rem;
+  margin-bottom: 1rem; }
+
+.btn--formulario {
+  background-color: var(--color1);
+  color: black; }
+
+/* --------------------------------- RESPONSIVE SECTION ------------------------------------ */
 /* paleta  de colores*/
+/* variables responsive */
+@media (min-width: 1080px) {
+  .nav--menu ul {
+    gap: 5rem; }
+  /* first section responsive */
+  .contenedor-plantas__divs {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin: 3rem 0 0 0; }
+  /* second section responsive*/
+  .extras__imgs {
+    max-width: 120rem;
+    width: 90%;
+    grid-template-columns: 25% 25% 50%;
+    grid-template-rows: 20rem 35rem;
+    grid-template-areas: "medicinales almacigos maceteros maceteros" "sustratos sustratos maceteros maceteros"; }
+  /* animaciones */
+  .almacigos, .maceteros, .sustratos, .medicinales {
+    transition: all .5s ease-in-out; }
+    .almacigos:hover, .maceteros:hover, .sustratos:hover, .medicinales:hover {
+      transform: scale(1.1);
+      z-index: 1;
+      -webkit-box-shadow: 0px 10px 13px -7px #000000, 5px 5px 16px 5px rgba(0, 0, 0, 0);
+      box-shadow: 0px 10px 13px -7px #000000, 5px 5px 16px 5px rgba(0, 0, 0, 0);
+      transform: translateY(-10px); }
+  .maceteros:hover {
+    transform: translate(10px); }
+  .sustratos:hover {
+    transform: translateX(-10px); }
+  .medicinales__contenido--index .btn--extras, .almacigos__contenido--index .btn--extras {
+    transition: all .5s ease-in-out; }
+  .medicinales__contenido--index:hover .btn--extras, .almacigos__contenido--index:hover .btn--extras {
+    transform: translateX(30%) translateY(-100%) scale(1.5); }
+  .maceteros__contenido--index .btn--extras, .sustratos__contenido--index .btn--extras {
+    transition: all .5s ease-in-out; }
+  .maceteros__contenido--index:hover .btn--extras, .sustratos__contenido--index:hover .btn--extras {
+    transform: translateX(20px) scale(2);
+    transform-origin: left; }
+  .pagos div {
+    transition: all .5s ease-in-out; }
+    .pagos div:hover {
+      transform: rotate(2deg) scale(1.1);
+      background-color: var(--color2); }
+  /* footer */
+  .footer__iconos--pago {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+    padding: 1rem 0; }
+  /* nueva-ola (third section responsive) */
+  .nueva-ola {
+    background-image: url(../img/nuevaola.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center; }
+  /* contacto page */
+  .nombre-apellido {
+    display: flex;
+    flex-direction: row;
+    justify-content: center; }
+  .tres-columnas {
+    display: flex;
+    align-items: flex-end;
+    flex-wrap: nowrap; }
+  .card:hover {
+    background-color: #a59898;
+    cursor: pointer;
+    transform: scale(1.1); } }
+
+@media (min-width: 768px) and (max-width: 1079px) {
+  /* first section responsive*/
+  .contenedor-plantas__divs {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); }
+  .imagen4 {
+    display: none; } }
+
+@media (min-width: 768px) {
+  /* footer */
+  .elementos-footer {
+    padding: 2rem 0;
+    display: flex;
+    justify-content: space-evenly; }
+  /* fourth section = pagos--index */
+  .pagos {
+    gap: 5rem;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center; }
+    .pagos div {
+      width: 30rem; }
+  .contenedor-resp {
+    display: none; } }
+
+/* max-width */
+/* responsive contacto */
+@media (max-width: 1070px) {
+  .planta-animada {
+    display: none; } }
+
+@media (max-width: 767px) {
+  .contenedor-desktop {
+    display: none; }
+  .img-responsive-carrusel img {
+    height: 50rem;
+    width: 35rem; } }

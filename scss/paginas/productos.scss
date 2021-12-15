@@ -2,19 +2,17 @@
 
 /* bootstrap en maceteros */
 
-
-
 .card {
     max-width: 25rem !important;
     align-items: center !important;
     transition: all .5s ease-in-out;
     width: 30rem !important;
     padding: 1rem 0 0 0;
-}
 
-.card img {   
-    max-width: 20rem;
-    height: 25rem;
+    img {   
+        max-width: 20rem;
+        height: 25rem;
+    }
 }
 
 
@@ -41,4 +39,11 @@
 .contenedor-cards {
     margin: 5rem auto;
     text-align: center;
+}
+
+
+.pagination--propia {
+    justify-content: center;
+    margin-bottom: 3rem !important;
+    gap: 1rem;
 }

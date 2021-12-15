@@ -6,20 +6,18 @@
     width: 100%;
 }
 
-
-
 .carousel-control-prev-icon {
     background-image: url("img/arrow-circle-left-solid.svg");
-  }
+}
   
 .carousel-control-next-icon {
     background-image: url("img/arrow-circle-right-solid.svg");
     
-  }
+}
 
   .carousel2 {
       position: relative;
-  }
+}
 
   /* pagination bs */
 
@@ -27,19 +25,15 @@
     color: #0d6efd;
     text-decoration: none;
     background-color: #fff;
-    border: 1px solid var(--tierraOscuro) !important;;
-  }
-
-  .page-link:hover {
-    color: white !important;
-    background-color: var(--tierraOscuro);
-    border-color: var(--color4) !important;
-  }
-
-  .page-link {
+    border: 1px solid var(--tierraOscuro) !important;
     padding: .5rem 1rem !important;
-  }
 
+    &:hover {
+      color: white !important;
+      background-color: var(--tierraOscuro);
+      border-color: var(--color4) !important;
+  }
+}
 
 
 
@@ -47,6 +41,7 @@
     .container-xl, .container-lg, .container-md, .container-sm, .container {
       max-width: 960px !important;
     }
+
   }
   @media (min-width: 1400px) {
     .container-xxl, .container-xl, .container-lg, .container-md, .container-sm, .container {

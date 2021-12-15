@@ -4,13 +4,14 @@
 .elementos-footer {
  
     display: grid;
-    grid-template-columns: 30% 35% 35%;
-    grid-template-rows: 38% 31% 31%;
-    grid-template-areas:
+    grid-template: {
+        columns: 30% 35% 35%;
+        rows: 38% 31% 31%;
+        areas:
     "contacto productos  social-media"
     "contacto productos  flechita"
     "logo  productos  flechita";
-    
+    }
     background-color: var(--color1);
     text-align: center;
     padding: 1rem 0 2rem 1rem;
@@ -49,11 +50,12 @@ footer ul {
 .footer__iconos {
     font-size: 3rem;
     padding: 1rem;
+
+    i:hover {
+        cursor: pointer;
+    }
 }
 
-.footer__iconos i:hover {
-    cursor: pointer;
-}
 
 .fa-arrow-circle-up {
     font-size: 5rem;
@@ -76,15 +78,15 @@ footer ul {
     display: block;
     text-align: center;
     background-color: var(--color4);
+
+    img {
+        height: 3rem;
+        width: 5rem;
+        background-color: white;
+        border: 1px solid black;
+    }
 }
 
-
-.footer__iconos--pago img {
-    height: 3rem;
-    width: 5rem;
-    background-color: white;
-    border: 1px solid black;
-}
 
 .visa {
     margin-right: 2rem;
