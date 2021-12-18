@@ -1,0 +1,124 @@
+$vista:mobile;
+
+body{
+@if $vista == desktop {
+    @media only screen and (min-width:1024px){
+        h1{font-size:$h1Desktop;}
+        h3{font-size:35px;}
+        p{font-size:$parrafoDesktop;}
+        }
+    } @else if $vista == mobile {
+        @media only screen and (max-width:767px){
+            h1{font-size:$h1Mobile;}
+            h3{font-size:25px;}
+            p{font-size:$parrafoMobile;}
+        }
+    } @else {
+        h1{font-size:34px;}
+        h3{font-size:25px;}
+        p{font-size:20px;}
+    }
+}
+
+
+
+/* bucles */
+
+
+@for $i from 1 through 10 {
+    .col-#{$i}{
+    width:10% * $i;
+    }
+}
+
+.col-1{width:10%;}
+.col-2{width:20%;}
+.col-3{width:30%;}
+.col-4{width:40%;}
+.col-5{width:50%;}
+.col-6{width:60%;}
+.col-7{width:70%;}
+.col-8{width:80%;}
+.col-9{width:90%;}
+.col-10{width:100%;}
+
+
+
+/* each */
+
+@each $color in blue, yellow, black {
+    #{$color}{
+    color:#{$color};
+    }
+}
+
+.blue {
+    color:blue;
+  }
+  
+  .yellow{
+     color:yellow;
+  }
+  
+  .black {
+     color:black;
+  }
+  
+
+  /* mapas */
+
+  $redes: ( /*Declaramos nuestro mapa*/
+        twitter: #55acee,
+        facebook:  #3a5795,
+        send-mail: #C25E30
+); 
+/*Creamos el bucle para usar los valores del mapa*/
+@each $red, $color in $redes {
+   .btn--#{$red} {
+       background-color: $color;
+   }
+}
+
+.btn--twitter {
+    background-color: #55acee;
+ }
+ 
+ .btn--facebook {
+    background-color: #3a5795;
+ }
+ 
+ .btn--send-mail {
+    background-color: #C25E30;
+ }
+
+ 
+ /* map-get() */
+ $estilos: (
+  color: #3673D9,
+  centro: center,
+  tFuente: 35px,
+  1rem : 1rem
+);
+
+div {
+  background-color: map-get($estilos, color);
+  text-align: map-get($estilos, centro);
+  padding: map-get($estilos, 1rem);
+  font-size:map-get($estilos, tFuente);
+}
+
+div {
+    background-color:#3673D9;
+ Text-align:center;
+ Padding:1rem;
+ Font-size:35px;
+ }
+ 
+
+
+
+
+
+
+
+

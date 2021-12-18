@@ -134,6 +134,28 @@
 }
 
 
+/* media header */
+
+@media (min-width: 992px) {
+    .logo--nav {
+        display: block;
+        text-align: center;
+    }
+
+    .carrito--responsive{
+        display: none;
+    }
+
+   .logo--nav {
+       img {
+           @include w-h(15rem, 10rem);
+           
+       }
+   }
+
+}
+
+
 @media (min-width: $medium) and (max-width: 1079px)  {
        
     /* first section responsive*/
@@ -195,8 +217,7 @@
     }
     
     .img-responsive-carrusel img{
-        height: 50rem;
-        width: 35rem;
+        @include w-h(35rem, 50rem);
     }
     
 } 

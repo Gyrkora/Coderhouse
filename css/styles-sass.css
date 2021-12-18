@@ -2,7 +2,28 @@
 /* Globales */
 /* paleta  de colores*/
 /* variables responsive */
+/* box-model */
+/* minxin */
+/* @each */
 @import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@300&display=swap");
+h6 {
+  font-size: 1rem; }
+
+h5 {
+  font-size: 1.5rem; }
+
+h4 {
+  font-size: 2rem; }
+
+h3 {
+  font-size: 2.5rem; }
+
+h2 {
+  font-size: 3rem; }
+
+h1 {
+  font-size: 3.5rem; }
+
 :root {
   /* --- FUENTES --- */
   --fuenteHeading:  'Inconsolata', monospace;
@@ -25,9 +46,51 @@
 
 /* paleta  de colores*/
 /* variables responsive */
+/* box-model */
+/* minxin */
+/* @each */
+h6 {
+  font-size: 1rem; }
+
+h5 {
+  font-size: 1.5rem; }
+
+h4 {
+  font-size: 2rem; }
+
+h3 {
+  font-size: 2.5rem; }
+
+h2 {
+  font-size: 3rem; }
+
+h1 {
+  font-size: 3.5rem; }
+
 /* ---------------------------- Globales ------------------------------ */
 /* paleta  de colores*/
 /* variables responsive */
+/* box-model */
+/* minxin */
+/* @each */
+h6 {
+  font-size: 1rem; }
+
+h5 {
+  font-size: 1.5rem; }
+
+h4 {
+  font-size: 2rem; }
+
+h3 {
+  font-size: 2.5rem; }
+
+h2 {
+  font-size: 3rem; }
+
+h1 {
+  font-size: 3.5rem; }
+
 html {
   box-sizing: border-box;
   font-size: 62.5%;
@@ -55,7 +118,6 @@ ul {
 h2, h1 {
   font-family: var(--fuenteHeading);
   font-weight: bold;
-  font-size: 3rem;
   color: var(--tierraOscuro);
   animation: example 2s;
   margin: 4rem 0 0 0; }
@@ -67,9 +129,6 @@ h2, h1 {
     color: var(--tierraClaro); }
   100% {
     color: var(--tierraOscuro); } }
-
-h4 {
-  font-size: 2rem; }
 
 img {
   max-width: 100%; }
@@ -83,16 +142,30 @@ img {
 .en-cursiva {
   font-style: italic; }
 
-/* mixin */
-.btn {
-  display: block;
-  padding: 1rem 3rem;
-  font-size: 1.6rem;
-  color: white; }
-
 /* ------------------------ MODIFICACIONES BOOTSTRAP GENERALES------------------------------ */
 /* paleta  de colores*/
 /* variables responsive */
+/* box-model */
+/* minxin */
+/* @each */
+h6 {
+  font-size: 1rem; }
+
+h5 {
+  font-size: 1.5rem; }
+
+h4 {
+  font-size: 2rem; }
+
+h3 {
+  font-size: 2.5rem; }
+
+h2 {
+  font-size: 3rem; }
+
+h1 {
+  font-size: 3.5rem; }
+
 .container {
   width: 100%; }
 
@@ -128,10 +201,83 @@ img {
 .contenedor-desktop {
   max-width: 130rem !important; }
 
+/* paleta  de colores*/
+/* variables responsive */
+/* box-model */
+/* minxin */
+/* @each */
+h6 {
+  font-size: 1rem; }
+
+h5 {
+  font-size: 1.5rem; }
+
+h4 {
+  font-size: 2rem; }
+
+h3 {
+  font-size: 2.5rem; }
+
+h2 {
+  font-size: 3rem; }
+
+h1 {
+  font-size: 3.5rem; }
+
+/* @extend */
+/* components */
+.btn, .btn--extras, .btn--formulario {
+  display: block;
+  padding: 1rem 3rem;
+  font-size: 1.6rem;
+  color: white;
+  border-style: none;
+  border-radius: 1.5rem; }
+
+.btn--extras {
+  background-color: #733B2F;
+  cursor: pointer; }
+  .btn--extras:hover {
+    color: #BF9D7E; }
+
+.btn--formulario {
+  background-color: #A4BF69;
+  color: black; }
+  .btn--formulario:hover {
+    color: #D3D9A7;
+    background-color: #34592E;
+    transition: all .5s ease-in-out; }
+
+/* General @extends */
+.flex-column, .almacigos__contenido--index, .maceteros__contenido--index, .sustratos__contenido--index, .medicinales__contenido--index, .nueva-ola__contenido, .pagos, .formulario {
+  display: flex;
+  flex-direction: column; }
+
 /* componentes */
 /* --- Header --- */
 /* paleta  de colores*/
 /* variables responsive */
+/* box-model */
+/* minxin */
+/* @each */
+h6 {
+  font-size: 1rem; }
+
+h5 {
+  font-size: 1.5rem; }
+
+h4 {
+  font-size: 2rem; }
+
+h3 {
+  font-size: 2.5rem; }
+
+h2 {
+  font-size: 3rem; }
+
+h1 {
+  font-size: 3.5rem; }
+
 .logo img {
   margin-top: 1rem;
   height: 10rem;
@@ -145,8 +291,8 @@ img {
   justify-content: space-between;
   padding: 0 5rem; }
   .logo--nav img {
-    width: 10rem;
-    height: 7rem; }
+    height: 7rem;
+    width: 10rem; }
 
 .carrito--responsive {
   font-size: 4rem; }
@@ -212,25 +358,36 @@ img {
 /* --- TERMINA NAVEGACIÓN --- */
 /* --- HERO --- */
 .hero {
-  background-image: url(../img/background4.jpg);
+  background-image: url("../img/background4.jpg");
+  background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
   height: 40rem; }
 
-/* media header */
-@media (min-width: 992px) {
-  .logo--nav {
-    display: block;
-    text-align: center; }
-  .carrito--responsive {
-    display: none; }
-  .logo--nav img {
-    height: 10rem;
-    width: 15rem; } }
-
 /* --FOOTER-- */
 /* paleta  de colores*/
 /* variables responsive */
+/* box-model */
+/* minxin */
+/* @each */
+h6 {
+  font-size: 1rem; }
+
+h5 {
+  font-size: 1.5rem; }
+
+h4 {
+  font-size: 2rem; }
+
+h3 {
+  font-size: 2.5rem; }
+
+h2 {
+  font-size: 3rem; }
+
+h1 {
+  font-size: 3.5rem; }
+
 .elementos-footer {
   display: grid;
   grid-template-columns: 30% 35% 35%;
@@ -297,6 +454,27 @@ footer ul {
 /* ---------------- INDEX ------------------- */
 /* paleta  de colores*/
 /* variables responsive */
+/* box-model */
+/* minxin */
+/* @each */
+h6 {
+  font-size: 1rem; }
+
+h5 {
+  font-size: 1.5rem; }
+
+h4 {
+  font-size: 2rem; }
+
+h3 {
+  font-size: 2.5rem; }
+
+h2 {
+  font-size: 3rem; }
+
+h1 {
+  font-size: 3.5rem; }
+
 /* ---FIRST SECTION = CONTENEDOR-PLANTAS ---*/
 .contenedor-plantas {
   text-align: center;
@@ -306,28 +484,21 @@ footer ul {
     opacity: 1;
     height: 30rem;
     width: 25rem;
-    border: 0.5px solid var(--tierraClaro);
     padding: .5rem;
-    background-color: var(--tierraClaro);
-    margin-top: 3rem; }
+    margin-top: 3rem;
+    border-radius: 1.5rem; }
     .contenedor-plantas img:hover {
       opacity: 0.8;
       cursor: pointer; }
 
-.contenedor-imagenes {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center; }
-
 /* ---- SECOND SECTION = diversidad de servicios ------- */
 .extras {
   text-align: center;
-  background-color: var(--color2);
+  background-color: #D3D9A7;
   padding: 3rem 0;
   margin: 5rem 0 0 0; }
   .extras h2 {
-    color: var(--tierraOscuro); }
+    color: #733B2F; }
 
 .extras__imgs {
   display: grid;
@@ -339,17 +510,9 @@ footer ul {
   margin: 5rem auto;
   justify-content: center; }
 
-.btn--extras {
-  background-color: var(--tierraOscuro);
-  color: white;
-  display: inline;
-  cursor: pointer; }
-
 .almacigos__contenido--index, .maceteros__contenido--index, .sustratos__contenido--index, .medicinales__contenido--index {
-  width: 100%;
   height: 100%;
-  display: flex;
-  flex-direction: column;
+  width: 100%;
   align-items: flex-start;
   justify-content: flex-end;
   position: absolute; }
@@ -358,9 +521,10 @@ footer ul {
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
-  width: 100%;
   position: relative;
-  height: 100%; }
+  width: 100%;
+  height: 100%;
+  border-radius: 1.5rem; }
 
 .medicinales {
   grid-area: medicinales;
@@ -383,7 +547,7 @@ footer ul {
   padding: 0 0 0 0; }
 
 .nueva-ola {
-  background-image: url(../img/planta55.jpeg);
+  background-image: url("../img/planta5.jpeg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
@@ -397,8 +561,6 @@ footer ul {
     font-size: 2rem; }
 
 .nueva-ola__contenido {
-  display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
   background-color: rgba(0, 0, 0, 0.2);
@@ -411,10 +573,8 @@ footer ul {
   margin: 7rem 0 10rem 0;
   text-align: center;
   gap: 2rem;
-  display: flex;
   align-items: center !important;
-  justify-content: center !important;
-  flex-direction: column; }
+  justify-content: center !important; }
   .pagos div {
     display: block;
     width: 100%;
@@ -456,6 +616,27 @@ footer ul {
 /* bootstrap en maceteros */
 /* paleta  de colores*/
 /* variables responsive */
+/* box-model */
+/* minxin */
+/* @each */
+h6 {
+  font-size: 1rem; }
+
+h5 {
+  font-size: 1.5rem; }
+
+h4 {
+  font-size: 2rem; }
+
+h3 {
+  font-size: 2.5rem; }
+
+h2 {
+  font-size: 3rem; }
+
+h1 {
+  font-size: 3.5rem; }
+
 .card {
   max-width: 25rem !important;
   align-items: center !important;
@@ -472,7 +653,7 @@ footer ul {
   align-items: center !important; }
 
 .btn-primary {
-  background-color: var(--tierraOscuro) !important;
+  background-color: #733B2F !important;
   color: white !important; }
 
 .maceteros-gap {
@@ -490,6 +671,27 @@ footer ul {
 
 /* paleta  de colores*/
 /* variables responsive */
+/* box-model */
+/* minxin */
+/* @each */
+h6 {
+  font-size: 1rem; }
+
+h5 {
+  font-size: 1.5rem; }
+
+h4 {
+  font-size: 2rem; }
+
+h3 {
+  font-size: 2.5rem; }
+
+h2 {
+  font-size: 3rem; }
+
+h1 {
+  font-size: 3.5rem; }
+
 .fa-map-marker-alt {
   font-size: 1rem;
   color: #b4a40e;
@@ -522,15 +724,13 @@ footer ul {
     color: #b4a40e; } }
 
 .formulario {
-  display: flex;
-  flex-direction: column;
   margin: 0 auto;
   max-width: 60rem;
   width: 95%;
   height: 80%;
   padding: 2rem;
-  background-color: var(--color2);
-  border-radius: .5rem;
+  background-color: #D3D9A7;
+  border-radius: 1.5rem;
   margin-bottom: 3rem; }
   .formulario #nombre, .formulario #apellido {
     width: 100%; }
@@ -544,13 +744,30 @@ footer ul {
   height: 3rem;
   margin-bottom: 1rem; }
 
-.btn--formulario {
-  background-color: var(--color1);
-  color: black; }
-
 /* --------------------------------- RESPONSIVE SECTION ------------------------------------ */
 /* paleta  de colores*/
 /* variables responsive */
+/* box-model */
+/* minxin */
+/* @each */
+h6 {
+  font-size: 1rem; }
+
+h5 {
+  font-size: 1.5rem; }
+
+h4 {
+  font-size: 2rem; }
+
+h3 {
+  font-size: 2.5rem; }
+
+h2 {
+  font-size: 3rem; }
+
+h1 {
+  font-size: 3.5rem; }
+
 @media (min-width: 1080px) {
   .nav--menu ul {
     gap: 5rem; }
@@ -619,6 +836,17 @@ footer ul {
     background-color: #a59898;
     cursor: pointer;
     transform: scale(1.1); } }
+
+/* media header */
+@media (min-width: 992px) {
+  .logo--nav {
+    display: block;
+    text-align: center; }
+  .carrito--responsive {
+    display: none; }
+  .logo--nav img {
+    height: 10rem;
+    width: 15rem; } }
 
 @media (min-width: 768px) and (max-width: 1079px) {
   /* first section responsive*/

@@ -4,8 +4,8 @@
 $verde-header: #A4BF69;
 $verde-nav: #D3D9A7;
 $verde-tarjetas: #34592E;
-$bg-btns: #733B2F;
-$font-btns: #BF9D7E;
+$cafe-oscuro: #733B2F;
+$cafe--claro: #BF9D7E;
 $bg-products: rgb(165, 152, 152);
 
 
@@ -15,3 +15,43 @@ $small: 480px;
 $medium: 768px;
 $large: 1080px;
 
+
+/* box-model */
+
+$border-radius: 1.5rem;
+
+
+
+
+//margin 
+
+
+
+/* minxin */
+
+@mixin w-h($width, $height) {
+    height: $height;
+    width: $width;
+}
+
+@mixin bg-image ($url) {
+    background: {
+        image: url($url);
+        repeat: no-repeat;
+        size: cover;
+        position: center center;
+    }
+}
+
+/* @each */
+
+$headings : h6 h5 h4 h3 h2 h1;
+$base-size : .5rem;
+
+$modular-scale : 0.5;
+@each $heading in $headings{
+  #{$heading} {
+    font-size : $base-size + $modular-scale;
+    $modular-scale : $modular-scale + 0.5;
+  }
+}

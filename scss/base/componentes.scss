@@ -1,0 +1,45 @@
+
+@import 'variables.scss';
+
+/* @extend */
+
+/* components */
+.btn {
+    display: block;
+    padding: 1rem 3rem;
+    font-size: 1.6rem;
+    color: white;  
+    border-style: none;
+    border-radius: $border-radius;
+}
+
+
+.btn--extras {
+    @extend .btn;
+    background-color: $cafe-oscuro;
+    cursor: pointer;
+
+    &:hover {
+        color: $cafe--claro
+    }
+}
+
+
+.btn--formulario {
+    @extend .btn;
+    background-color: $verde-header;
+    color: black;
+
+    &:hover {
+        color: $verde-nav;
+        background-color: $verde-tarjetas;
+        transition: all .5s ease-in-out;
+    }
+}
+
+/* General @extends */
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+}

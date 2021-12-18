@@ -34,10 +34,11 @@ ul {
     list-style-type: none;
 }
 
+
+
 h2, h1 {
     font-family: var(--fuenteHeading);
     font-weight: bold;
-    font-size: 3rem;
     color: var(--tierraOscuro);
     animation: example 2s;
     margin: 4rem 0 0 0;
@@ -60,9 +61,7 @@ h2, h1 {
     
 }
 
-h4 {
-    font-size: 2rem;
-}
+
 
 img {
     max-width: 100%;
@@ -81,11 +80,6 @@ img {
     font-style: italic;
 }
 
-/* mixin */
-.btn {
-    display: block;
-    padding: 1rem 3rem;
-    font-size: 1.6rem;
-    color: white;
-    
-}
+
+
+

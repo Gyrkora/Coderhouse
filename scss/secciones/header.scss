@@ -8,8 +8,7 @@
     img {
 
     margin-top: 1rem;
-    height: 10rem;
-    width: 15rem;
+    @include w-h(15rem, 10rem);
     margin-bottom: 1rem;
 }
 
@@ -23,8 +22,8 @@
     padding: 0 5rem;
 
     img {
-        width: 10rem;
-        height: 7rem;
+        @include w-h(10rem, 7rem);
+
     }
 }
 
@@ -96,8 +95,7 @@
                 text-align: center;
 
                 img {
-                    height: 20px;
-                    width: 20px;
+                    @include w-h(20px, 20px);
                 }
 
                 a {
@@ -124,34 +122,9 @@
 /* --- HERO --- */
 
 .hero {
-    background-image: url(../img/background4.jpg);
-    background-size: cover;
-    background-position: center center;
+    @include bg-image('../img/background4.jpg');
     height: 40rem;
-    
 }
 
 
-/* media header */
 
-
-
-@media (min-width: 992px) {
-    .logo--nav {
-        display: block;
-        text-align: center;
-    }
-
-    .carrito--responsive{
-        display: none;
-    }
-
-   .logo--nav {
-       img {
-           height: 10rem;
-           width: 15rem;
-       }
-   }
-
-    
-}

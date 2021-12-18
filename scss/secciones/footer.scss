@@ -81,8 +81,7 @@ footer ul {
     background-color: var(--color4);
 
     img {
-        height: 3rem;
-        width: 5rem;
+        @include w-h(5rem, 3rem);
         background-color: white;
         border: 1px solid black;
     }
