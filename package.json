@@ -5,6 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
+    "build-bs": "node-sass --include-path scss scss/bootstrap/bootstrap.scss css/bs.css",
+    "watch-bs": "nodemon -e scss -x \"npm run build-bs\"",
     "build-css": "node-sass --include-path scss scss/styles.scss css/styles-sass.css",
     "watch-css": "nodemon -e scss -x \"npm run build-css\""
   },
