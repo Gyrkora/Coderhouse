@@ -30,10 +30,17 @@ a {
     text-align: center;
 }
 
+.in-bold {
+    font-weight: bold;
+}
+
 ul {
     list-style-type: none;
 }
 
+h1, h2, h3, h4, h5 {
+    margin: 2rem 0 !important;
+}
 
 
 h2, h1 {
@@ -41,7 +48,7 @@ h2, h1 {
     font-weight: bold;
     color: var(--tierraOscuro);
     animation: example 2s;
-    margin: 4rem 0 0 0;
+    // margin: 4rem 0 0 0;
     
 }
   @keyframes example {

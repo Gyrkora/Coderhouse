@@ -112,15 +112,20 @@ a {
 .centrar-texto {
   text-align: center; }
 
+.in-bold {
+  font-weight: bold; }
+
 ul {
   list-style-type: none; }
+
+h1, h2, h3, h4, h5 {
+  margin: 2rem 0 !important; }
 
 h2, h1 {
   font-family: var(--fuenteHeading);
   font-weight: bold;
   color: var(--tierraOscuro);
-  animation: example 2s;
-  margin: 4rem 0 0 0; }
+  animation: example 2s; }
 
 @keyframes example {
   20% {
@@ -478,32 +483,34 @@ h1 {
 /* ---FIRST SECTION = CONTENEDOR-PLANTAS ---*/
 .contenedor-plantas {
   text-align: center;
-  margin: 0 auto; }
+  margin: 7rem auto; }
   .contenedor-plantas img {
     transition: .5s ease;
     opacity: 1;
-    height: 30rem;
-    width: 25rem;
+    height: 25rem;
+    width: 20rem;
     padding: .5rem;
-    margin-top: 3rem;
+    margin-top: 2rem;
     border-radius: 1.5rem; }
     .contenedor-plantas img:hover {
       opacity: 0.8;
       cursor: pointer; }
 
+.contenedor-desktop h1, .contenedor-desktop h2 {
+  margin: 1rem 0 !important; }
+
 /* ---- SECOND SECTION = diversidad de servicios ------- */
 .extras {
   text-align: center;
   background-color: #D3D9A7;
-  padding: 3rem 0;
-  margin: 5rem 0 0 0; }
+  padding: 3rem 0; }
   .extras h2 {
     color: #733B2F; }
 
 .extras__imgs {
   display: grid;
   grid-row-gap: 1.5rem;
-  grid-column-gap: 1rem;
+  grid-column-gap: 2rem;
   grid-template-columns: 49% 49%;
   grid-template-rows: 20rem 35rem 40rem;
   grid-template-areas: "medicinales almacigos" "sustratos sustratos" "maceteros maceteros";
@@ -568,9 +575,49 @@ h1 {
   width: 100%;
   position: absolute; }
 
+/* testimonios */
+.testimonios {
+  margin: 5rem auto; }
+  .testimonios .testimonios__contenedor div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    text-align: center;
+    border-radius: 1.5rem;
+    padding: 1rem;
+    margin: 4rem 1rem;
+    transition: all .5s ease-in-out;
+    background-color: #e5e8cb; }
+    .testimonios .testimonios__contenedor div:hover {
+      -webkit-box-shadow: 1px 6px 8px 1px rgba(0, 0, 0, 0.29);
+      box-shadow: 1px 6px 8px 1px rgba(0, 0, 0, 0.29);
+      background-color: #D3D9A7; }
+      .testimonios .testimonios__contenedor div:hover i {
+        color: #34592E;
+        transition: all 1s ease-in-out; }
+  .testimonios .testimonios__contenedor .valoraciones {
+    height: 6rem;
+    width: 20rem;
+    margin: 1rem; }
+  .testimonios .testimonios__contenedor .img-gente {
+    margin-top: 1rem 0 .5rem 0;
+    max-width: 40rem;
+    max-height: 30rem; }
+  .testimonios .testimonios__contenedor p {
+    margin-top: 1rem 0; }
+  .testimonios .testimonios__contenedor h5 {
+    font-weight: bold;
+    margin-top: 0 !important; }
+  .testimonios .testimonios__contenedor i {
+    color: #b3b300; }
+  .testimonios button {
+    display: flex;
+    align-content: center;
+    justify-content: center; }
+
 /* --------- FOURTH SECTION = pagos--index  ------------- */
 .pagos {
-  margin: 7rem 0 10rem 0;
   text-align: center;
   gap: 2rem;
   align-items: center !important;
@@ -774,8 +821,7 @@ h1 {
   /* first section responsive */
   .contenedor-plantas__divs {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    margin: 3rem 0 0 0; }
+    grid-template-columns: repeat(4, 1fr); }
   /* second section responsive*/
   .extras__imgs {
     max-width: 120rem;
@@ -805,6 +851,11 @@ h1 {
   .maceteros__contenido--index:hover .btn--extras, .sustratos__contenido--index:hover .btn--extras {
     transform: translateX(20px) scale(2);
     transform-origin: left; }
+  /* testimonios */
+  .testimonios__contenedor {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-column-gap: 2rem; }
   .pagos div {
     transition: all .5s ease-in-out; }
     .pagos div:hover {
@@ -853,6 +904,11 @@ h1 {
   .contenedor-plantas__divs {
     display: grid;
     grid-template-columns: repeat(3, 1fr); }
+  .testimonios .testimonios__contenedor {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); }
+    .testimonios .testimonios__contenedor .testimonio4 {
+      display: none; }
   .imagen4 {
     display: none; } }
 

@@ -18,7 +18,7 @@
     .contenedor-plantas__divs {
         display: grid;
         grid-template-columns: repeat(4, 1fr);  
-        margin: 3rem 0 0 0;
+        // margin: 3rem 0 0 0;
  }
 
     /* second section responsive*/
@@ -75,7 +75,15 @@
         transform-origin: left;
     }
 
-    
+    /* testimonios */
+
+    .testimonios__contenedor {
+        
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-column-gap: 2rem;
+
+    }
     .pagos { 
         
         div {
@@ -164,9 +172,26 @@
         grid-template-columns: repeat(3, 1fr);
 
     }
+    .testimonios {
+        .testimonios__contenedor {
+        
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);        
+   
+            .testimonio4 {
+                display: none;
+            }
+        }
+
+    }
+    
+
     .imagen4 {
         display: none; 
+        
     } 
+
+    
 
 }
 
