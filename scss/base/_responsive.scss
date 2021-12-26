@@ -77,13 +77,56 @@
 
     /* testimonios */
 
-    .testimonios__contenedor {
-        
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-column-gap: 2rem;
+    .testimonios {
 
-    }
+
+
+
+        .div-btn--testimonios {
+            display: flex;
+            align-items: center;
+            justify-content: center;   
+        }
+
+        .btn--testimonios {
+            transition: all .5s ease-in-out;
+        
+            &:hover {
+                padding: 1rem 30rem;
+            }
+        }
+
+        .testimonios__contenedor {
+        
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-column-gap: 2rem;  
+        
+            
+        div {
+            transition: all .5s ease-in-out;            
+
+            &:hover {
+                -webkit-box-shadow: 1px 6px 8px 1px rgba(0,0,0,0.29); 
+                box-shadow: 1px 6px 8px 1px rgba(0,0,0,0.29);
+                background-color: $verde-nav;
+                cursor: pointer;
+
+                    i {
+                        color: $verde-tarjetas;
+                        transition: all 1s ease-in-out
+                    }
+
+                
+                }     
+        
+            }
+
+        }
+    
+}
+
+
     .pagos { 
         
         div {
@@ -110,11 +153,45 @@
 
     /* nueva-ola (third section responsive) */
     .nueva-ola {
-        background-image: url(../img/nuevaola.jpg);
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center center;
+        // @include bg-image ('../img/nuevaolacopias.jpg');
+        @include bg-image ('../img/hero.JPG');
+        height: 920px;
+
+        .nueva-ola__contenido {
+            @include w-h (100%, 100%);
+            position: relative;
+            
+            .nueva-ola__contenidointerno {
+                position: absolute;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                left: 50px;
+                bottom: 120px;
+                background-color: $verde-header;
+                @include w-h (30rem, 20rem);
+                border-radius: $border-radius;
+                color: $cafe-oscuro;
+
+                p {
+                    font-size: 2rem;
+                    text-align: center;
+                    margin: 0 !important;
+                    font-size: 2.5rem;
+                }
+
+                h3 {
+                    color: $cafe-oscuro;
+                    margin: 0 !important;
+                    font-size: 2.5rem;
+                }
+            }
+        }       
     }
+
+
+
 
 
     /* contacto page */
@@ -194,6 +271,8 @@
     
 
 }
+
+
 
 
 @media (min-width: $medium) {

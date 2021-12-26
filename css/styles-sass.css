@@ -4,7 +4,7 @@
 /* variables responsive */
 /* box-model */
 /* minxin */
-/* @each */
+/* @each! */
 @import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@300&display=swap");
 h6 {
   font-size: 1rem; }
@@ -48,7 +48,7 @@ h1 {
 /* variables responsive */
 /* box-model */
 /* minxin */
-/* @each */
+/* @each! */
 h6 {
   font-size: 1rem; }
 
@@ -72,7 +72,7 @@ h1 {
 /* variables responsive */
 /* box-model */
 /* minxin */
-/* @each */
+/* @each! */
 h6 {
   font-size: 1rem; }
 
@@ -152,7 +152,7 @@ img {
 /* variables responsive */
 /* box-model */
 /* minxin */
-/* @each */
+/* @each! */
 h6 {
   font-size: 1rem; }
 
@@ -210,7 +210,7 @@ h1 {
 /* variables responsive */
 /* box-model */
 /* minxin */
-/* @each */
+/* @each! */
 h6 {
   font-size: 1rem; }
 
@@ -231,30 +231,35 @@ h1 {
 
 /* @extend */
 /* components */
-.btn, .btn--extras, .btn--formulario {
-  display: block;
+.btn, .btn--extras, .btn--testimonios, .btn--formulario {
   padding: 1rem 3rem;
   font-size: 1.6rem;
   color: white;
   border-style: none;
   border-radius: 1.5rem; }
 
-.btn--extras {
+.btn--extras, .btn--testimonios {
   background-color: #733B2F;
-  cursor: pointer; }
-  .btn--extras:hover {
+  cursor: pointer;
+  display: block; }
+  .btn--extras:hover, .btn--testimonios:hover {
     color: #BF9D7E; }
 
 .btn--formulario {
   background-color: #A4BF69;
-  color: black; }
+  color: black;
+  display: block; }
   .btn--formulario:hover {
     color: #D3D9A7;
     background-color: #34592E;
     transition: all .5s ease-in-out; }
 
+.btn--testimonios {
+  padding: 1rem 10rem;
+  transition: all .5s ease-in-out; }
+
 /* General @extends */
-.flex-column, .almacigos__contenido--index, .maceteros__contenido--index, .sustratos__contenido--index, .medicinales__contenido--index, .nueva-ola__contenido, .pagos, .formulario {
+.flex-column, .almacigos__contenido--index, .maceteros__contenido--index, .sustratos__contenido--index, .medicinales__contenido--index, .pagos, .formulario {
   display: flex;
   flex-direction: column; }
 
@@ -264,7 +269,7 @@ h1 {
 /* variables responsive */
 /* box-model */
 /* minxin */
-/* @each */
+/* @each! */
 h6 {
   font-size: 1rem; }
 
@@ -363,7 +368,7 @@ h1 {
 /* --- TERMINA NAVEGACIÓN --- */
 /* --- HERO --- */
 .hero {
-  background-image: url("../img/background4.jpg");
+  background-image: url("../img/hero5.JPG");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
@@ -374,7 +379,7 @@ h1 {
 /* variables responsive */
 /* box-model */
 /* minxin */
-/* @each */
+/* @each! */
 h6 {
   font-size: 1rem; }
 
@@ -461,7 +466,7 @@ footer ul {
 /* variables responsive */
 /* box-model */
 /* minxin */
-/* @each */
+/* @each! */
 h6 {
   font-size: 1rem; }
 
@@ -554,26 +559,39 @@ h1 {
   padding: 0 0 0 0; }
 
 .nueva-ola {
-  background-image: url("../img/planta5.jpeg");
+  background-image: url("../img/resp-guindas.JPG");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
-  height: 920px;
+  height: 800px;
   position: relative; }
-  .nueva-ola h3 {
-    color: white;
-    width: 18rem;
-    text-align: center;
-    line-height: 1.5;
-    font-size: 2rem; }
-
-.nueva-ola__contenido {
-  justify-content: center;
-  align-items: center;
-  background-color: rgba(0, 0, 0, 0.2);
-  height: 100%;
-  width: 100%;
-  position: absolute; }
+  .nueva-ola .nueva-ola__contenido {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+    .nueva-ola .nueva-ola__contenido .nueva-ola__contenidointerno {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background-color: #e5e8cb;
+      height: 20rem;
+      width: 30rem;
+      border-radius: 1.5rem;
+      color: #733B2F; }
+      .nueva-ola .nueva-ola__contenido .nueva-ola__contenidointerno p {
+        font-size: 2rem;
+        text-align: center;
+        margin: 0 !important;
+        font-size: 2.5rem; }
+      .nueva-ola .nueva-ola__contenido .nueva-ola__contenidointerno h3 {
+        color: #733B2F;
+        text-align: center;
+        line-height: 1.5; }
 
 /* testimonios */
 .testimonios {
@@ -587,15 +605,7 @@ h1 {
     border-radius: 1.5rem;
     padding: 1rem;
     margin: 4rem 1rem;
-    transition: all .5s ease-in-out;
     background-color: #e5e8cb; }
-    .testimonios .testimonios__contenedor div:hover {
-      -webkit-box-shadow: 1px 6px 8px 1px rgba(0, 0, 0, 0.29);
-      box-shadow: 1px 6px 8px 1px rgba(0, 0, 0, 0.29);
-      background-color: #D3D9A7; }
-      .testimonios .testimonios__contenedor div:hover i {
-        color: #34592E;
-        transition: all 1s ease-in-out; }
   .testimonios .testimonios__contenedor .valoraciones {
     height: 6rem;
     width: 20rem;
@@ -611,9 +621,9 @@ h1 {
     margin-top: 0 !important; }
   .testimonios .testimonios__contenedor i {
     color: #b3b300; }
-  .testimonios button {
+  .testimonios .div-btn--testimonios {
     display: flex;
-    align-content: center;
+    align-items: center;
     justify-content: center; }
 
 /* --------- FOURTH SECTION = pagos--index  ------------- */
@@ -665,7 +675,7 @@ h1 {
 /* variables responsive */
 /* box-model */
 /* minxin */
-/* @each */
+/* @each! */
 h6 {
   font-size: 1rem; }
 
@@ -720,7 +730,7 @@ h1 {
 /* variables responsive */
 /* box-model */
 /* minxin */
-/* @each */
+/* @each! */
 h6 {
   font-size: 1rem; }
 
@@ -796,7 +806,7 @@ h1 {
 /* variables responsive */
 /* box-model */
 /* minxin */
-/* @each */
+/* @each! */
 h6 {
   font-size: 1rem; }
 
@@ -842,20 +852,38 @@ h1 {
     transform: translate(10px); }
   .sustratos:hover {
     transform: translateX(-10px); }
-  .medicinales__contenido--index .btn--extras, .almacigos__contenido--index .btn--extras {
+  .medicinales__contenido--index .btn--extras, .medicinales__contenido--index .btn--testimonios, .almacigos__contenido--index .btn--extras, .almacigos__contenido--index .btn--testimonios {
     transition: all .5s ease-in-out; }
-  .medicinales__contenido--index:hover .btn--extras, .almacigos__contenido--index:hover .btn--extras {
+  .medicinales__contenido--index:hover .btn--extras, .medicinales__contenido--index:hover .btn--testimonios, .almacigos__contenido--index:hover .btn--extras, .almacigos__contenido--index:hover .btn--testimonios {
     transform: translateX(30%) translateY(-100%) scale(1.5); }
-  .maceteros__contenido--index .btn--extras, .sustratos__contenido--index .btn--extras {
+  .maceteros__contenido--index .btn--extras, .maceteros__contenido--index .btn--testimonios, .sustratos__contenido--index .btn--extras, .sustratos__contenido--index .btn--testimonios {
     transition: all .5s ease-in-out; }
-  .maceteros__contenido--index:hover .btn--extras, .sustratos__contenido--index:hover .btn--extras {
+  .maceteros__contenido--index:hover .btn--extras, .maceteros__contenido--index:hover .btn--testimonios, .sustratos__contenido--index:hover .btn--extras, .sustratos__contenido--index:hover .btn--testimonios {
     transform: translateX(20px) scale(2);
     transform-origin: left; }
   /* testimonios */
-  .testimonios__contenedor {
+  .testimonios .div-btn--testimonios {
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+  .testimonios .btn--testimonios {
+    transition: all .5s ease-in-out; }
+    .testimonios .btn--testimonios:hover {
+      padding: 1rem 30rem; }
+  .testimonios .testimonios__contenedor {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-column-gap: 2rem; }
+    .testimonios .testimonios__contenedor div {
+      transition: all .5s ease-in-out; }
+      .testimonios .testimonios__contenedor div:hover {
+        -webkit-box-shadow: 1px 6px 8px 1px rgba(0, 0, 0, 0.29);
+        box-shadow: 1px 6px 8px 1px rgba(0, 0, 0, 0.29);
+        background-color: #D3D9A7;
+        cursor: pointer; }
+        .testimonios .testimonios__contenedor div:hover i {
+          color: #34592E;
+          transition: all 1s ease-in-out; }
   .pagos div {
     transition: all .5s ease-in-out; }
     .pagos div:hover {
@@ -870,10 +898,37 @@ h1 {
     padding: 1rem 0; }
   /* nueva-ola (third section responsive) */
   .nueva-ola {
-    background-image: url(../img/nuevaola.jpg);
+    background-image: url("../img/hero.JPG");
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center center; }
+    background-position: center center;
+    height: 920px; }
+    .nueva-ola .nueva-ola__contenido {
+      height: 100%;
+      width: 100%;
+      position: relative; }
+      .nueva-ola .nueva-ola__contenido .nueva-ola__contenidointerno {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        left: 50px;
+        bottom: 120px;
+        background-color: #A4BF69;
+        height: 20rem;
+        width: 30rem;
+        border-radius: 1.5rem;
+        color: #733B2F; }
+        .nueva-ola .nueva-ola__contenido .nueva-ola__contenidointerno p {
+          font-size: 2rem;
+          text-align: center;
+          margin: 0 !important;
+          font-size: 2.5rem; }
+        .nueva-ola .nueva-ola__contenido .nueva-ola__contenidointerno h3 {
+          color: #733B2F;
+          margin: 0 !important;
+          font-size: 2.5rem; }
   /* contacto page */
   .nombre-apellido {
     display: flex;

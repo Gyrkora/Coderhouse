@@ -44,7 +44,7 @@ $margin-sections: 7rem auto;
     }
 }
 
-/* @each */
+/* @each! */
 
 $headings : h6 h5 h4 h3 h2 h1;
 $base-size : .5rem;
@@ -56,3 +56,4 @@ $modular-scale : 0.5;
     $modular-scale : $modular-scale + 0.5;
   }
 }
+
