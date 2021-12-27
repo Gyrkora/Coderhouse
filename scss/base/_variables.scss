@@ -9,6 +9,7 @@ $cafe--claro: #BF9D7E;
 $bg-products: rgb(165, 152, 152);
 
 
+
 /* variables responsive */
 
 $small: 480px;
@@ -57,3 +58,17 @@ $modular-scale : 0.5;
   }
 }
 
+
+
+$redes-sociales: (
+  instagram: #cd486b,
+  facebook: #355391,
+  youtube: #d30404,
+  whatsapp: #075e54
+);
+
+@each $red, $color in $redes-sociales {
+  .color-#{$red} {
+    color: $color;
+  }
+}

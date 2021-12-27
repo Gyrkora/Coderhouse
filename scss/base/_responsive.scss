@@ -2,7 +2,7 @@
 
 /* --------------------------------- RESPONSIVE SECTION ------------------------------------ */
 
-@import '../base/variables.scss';
+// @import '../base/variables.scss';
 
 
 @media (min-width: $large){
@@ -127,18 +127,6 @@
 }
 
 
-    .pagos { 
-        
-        div {
-        transition: all .5s ease-in-out;
-
-        &:hover {
-            transform: rotate(2deg) scale(1.1);
-            background-color: var(--color2); 
-            
-        }
-    }
-}
     
 
     /* footer */

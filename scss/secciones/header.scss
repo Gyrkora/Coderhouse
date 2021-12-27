@@ -1,6 +1,6 @@
 /* --- Header --- */ 
 
-@import '../base/variables.scss';
+// @import '../base/variables.scss';
 
 
 .logo {
@@ -80,7 +80,7 @@
 .nav--menu {
 
     background-color: $verde-nav;
-    font-family: var(--fuenteParrafos);
+    font-family: $fuenteParrafos;
     padding: 0;
     margin: 0;
 
@@ -93,6 +93,7 @@
 
             li {
                 text-align: center;
+                
 
                 img {
                     @include w-h(20px, 20px);
@@ -101,11 +102,13 @@
                 a {
                     display: inline-block;
                     padding: 1rem;
+                    
 
                     &:hover {
                     background-color: $verde-header;
                     transition: background-color .3s ease;
-                    color: var(--tierraOscuro);
+                    
+                    
                
                 }
             }

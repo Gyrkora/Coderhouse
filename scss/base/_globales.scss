@@ -1,6 +1,7 @@
 /* ---------------------------- Globales ------------------------------ */
 
-@import '../base/variables.scss';
+// @import '../base/variables.scss';
+
 
 html {
     box-sizing: border-box;
@@ -44,25 +45,25 @@ h1, h2, h3, h4, h5 {
 
 
 h2, h1 {
-    font-family: var(--fuenteHeading);
+    font-family: $fuenteHeadings;
     font-weight: bold;
-    color: var(--tierraOscuro);
+    color: $cafe-oscuro;
     animation: example 2s;
    
     
 }
   @keyframes example {
       20% {
-          color: var(--color4);     
+          color: lighten($verde-tarjetas, 10%);     
       }
 
       50% {
-          color: var(--tierraClaro);
+          color: $cafe--claro;
           
       }
 
       100% {
-          color: var(--tierraOscuro);
+          color: $cafe-oscuro;
           
       }
     

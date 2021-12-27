@@ -1,49 +1,7 @@
 @charset "UTF-8";
 /* Globales */
-/* paleta  de colores*/
-/* variables responsive */
-/* box-model */
-/* minxin */
-/* @each! */
 @import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@300&display=swap");
-h6 {
-  font-size: 1rem; }
-
-h5 {
-  font-size: 1.5rem; }
-
-h4 {
-  font-size: 2rem; }
-
-h3 {
-  font-size: 2.5rem; }
-
-h2 {
-  font-size: 3rem; }
-
-h1 {
-  font-size: 3.5rem; }
-
-:root {
-  /* --- FUENTES --- */
-  --fuenteHeading:  'Inconsolata', monospace;
-  --fuenteParrafos: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  /* --- PALETAS --- */
-  --verdeOscuro: #668C4A;
-  --verdeClaro: #A6BF4B;
-  --grisClaro: #F2F0D5;
-  --amarillo: #F2C53D;
-  --grisOscuro: #B1B1AC;
-  --tierraOscuro: #733B2F;
-  --tierraClaro: #BF9D7E;
-  --color1: #A4BF69;
-  --color2: #D3D9A7;
-  --color3: #5E8C30;
-  --color4: #34592E;
-  --color5: #141E26;
-  --color6: #233747;
-  --color7: #dbbb51; }
-
+/* FUENTES */
 /* paleta  de colores*/
 /* variables responsive */
 /* box-model */
@@ -66,31 +24,20 @@ h2 {
 
 h1 {
   font-size: 3.5rem; }
+
+.color-instagram, .fa-instagram {
+  color: #cd486b; }
+
+.color-facebook, .fa-facebook {
+  color: #355391; }
+
+.color-youtube, .fa-youtube {
+  color: #d30404; }
+
+.color-whatsapp, .fa-whatsapp {
+  color: #075e54; }
 
 /* ---------------------------- Globales ------------------------------ */
-/* paleta  de colores*/
-/* variables responsive */
-/* box-model */
-/* minxin */
-/* @each! */
-h6 {
-  font-size: 1rem; }
-
-h5 {
-  font-size: 1.5rem; }
-
-h4 {
-  font-size: 2rem; }
-
-h3 {
-  font-size: 2.5rem; }
-
-h2 {
-  font-size: 3rem; }
-
-h1 {
-  font-size: 3.5rem; }
-
 html {
   box-sizing: border-box;
   font-size: 62.5%;
@@ -122,18 +69,18 @@ h1, h2, h3, h4, h5 {
   margin: 2rem 0 !important; }
 
 h2, h1 {
-  font-family: var(--fuenteHeading);
+  font-family: "Inconsolata", monospace;
   font-weight: bold;
-  color: var(--tierraOscuro);
+  color: #733B2F;
   animation: example 2s; }
 
 @keyframes example {
   20% {
-    color: var(--color4); }
+    color: #487b3f; }
   50% {
-    color: var(--tierraClaro); }
+    color: #BF9D7E; }
   100% {
-    color: var(--tierraOscuro); } }
+    color: #733B2F; } }
 
 img {
   max-width: 100%; }
@@ -148,29 +95,6 @@ img {
   font-style: italic; }
 
 /* ------------------------ MODIFICACIONES BOOTSTRAP GENERALES------------------------------ */
-/* paleta  de colores*/
-/* variables responsive */
-/* box-model */
-/* minxin */
-/* @each! */
-h6 {
-  font-size: 1rem; }
-
-h5 {
-  font-size: 1.5rem; }
-
-h4 {
-  font-size: 2rem; }
-
-h3 {
-  font-size: 2.5rem; }
-
-h2 {
-  font-size: 3rem; }
-
-h1 {
-  font-size: 3.5rem; }
-
 .container {
   width: 100%; }
 
@@ -188,12 +112,12 @@ h1 {
   color: #0d6efd;
   text-decoration: none;
   background-color: #fff;
-  border: 1px solid var(--tierraOscuro) !important;
+  border: 1px solid #733B2F !important;
   padding: .5rem 1rem !important; }
   .page-link:hover {
     color: white !important;
-    background-color: var(--tierraOscuro);
-    border-color: var(--color4) !important; }
+    background-color: #733B2F;
+    border-color: #34592E !important; }
 
 @media (min-width: 1200px) {
   .container-xl, .container-lg, .container-md, .container-sm, .container {
@@ -205,29 +129,6 @@ h1 {
 
 .contenedor-desktop {
   max-width: 130rem !important; }
-
-/* paleta  de colores*/
-/* variables responsive */
-/* box-model */
-/* minxin */
-/* @each! */
-h6 {
-  font-size: 1rem; }
-
-h5 {
-  font-size: 1.5rem; }
-
-h4 {
-  font-size: 2rem; }
-
-h3 {
-  font-size: 2.5rem; }
-
-h2 {
-  font-size: 3rem; }
-
-h1 {
-  font-size: 3.5rem; }
 
 /* @extend */
 /* components */
@@ -259,35 +160,12 @@ h1 {
   transition: all .5s ease-in-out; }
 
 /* General @extends */
-.flex-column, .almacigos__contenido--index, .maceteros__contenido--index, .sustratos__contenido--index, .medicinales__contenido--index, .pagos, .formulario {
+.flex-column, .almacigos__contenido--index, .maceteros__contenido--index, .sustratos__contenido--index, .medicinales__contenido--index, .formulario {
   display: flex;
   flex-direction: column; }
 
 /* componentes */
 /* --- Header --- */
-/* paleta  de colores*/
-/* variables responsive */
-/* box-model */
-/* minxin */
-/* @each! */
-h6 {
-  font-size: 1rem; }
-
-h5 {
-  font-size: 1.5rem; }
-
-h4 {
-  font-size: 2rem; }
-
-h3 {
-  font-size: 2.5rem; }
-
-h2 {
-  font-size: 3rem; }
-
-h1 {
-  font-size: 3.5rem; }
-
 .logo img {
   margin-top: 1rem;
   height: 10rem;
@@ -343,7 +221,7 @@ h1 {
 
 .nav--menu {
   background-color: #D3D9A7;
-  font-family: var(--fuenteParrafos);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   padding: 0;
   margin: 0; }
   .nav--menu ul {
@@ -362,8 +240,7 @@ h1 {
         padding: 1rem; }
         .nav--menu ul li a:hover {
           background-color: #A4BF69;
-          transition: background-color .3s ease;
-          color: var(--tierraOscuro); }
+          transition: background-color .3s ease; }
 
 /* --- TERMINA NAVEGACIÓN --- */
 /* --- HERO --- */
@@ -375,35 +252,15 @@ h1 {
   height: 40rem; }
 
 /* --FOOTER-- */
-/* paleta  de colores*/
-/* variables responsive */
-/* box-model */
-/* minxin */
-/* @each! */
-h6 {
-  font-size: 1rem; }
-
-h5 {
-  font-size: 1.5rem; }
-
-h4 {
-  font-size: 2rem; }
-
-h3 {
-  font-size: 2.5rem; }
-
-h2 {
-  font-size: 3rem; }
-
-h1 {
-  font-size: 3.5rem; }
+footer h6 {
+  font-size: 1.6rem; }
 
 .elementos-footer {
   display: grid;
   grid-template-columns: 30% 35% 35%;
   grid-template-rows: 38% 31% 31%;
   grid-template-areas: "contacto productos  social-media" "contacto productos  flechita" "logo  productos  flechita";
-  background-color: var(--color1);
+  background-color: #A4BF69;
   text-align: center;
   padding: 1rem 0 2rem 1rem; }
 
@@ -439,14 +296,13 @@ footer ul {
   margin: 2rem 0; }
 
 .fa-whatsapp {
-  font-size: 2rem;
-  color: var(--color4); }
+  font-size: 2rem; }
 
 /* pagos footer */
 .footer__iconos--pago {
   display: block;
   text-align: center;
-  background-color: var(--color4); }
+  background-color: #34592E; }
   .footer__iconos--pago img {
     height: 3rem;
     width: 5rem;
@@ -458,33 +314,10 @@ footer ul {
 
 .referencia {
   margin-left: 2rem;
-  color: var(--color2); }
+  color: #D3D9A7; }
 
 /* pages */
 /* ---------------- INDEX ------------------- */
-/* paleta  de colores*/
-/* variables responsive */
-/* box-model */
-/* minxin */
-/* @each! */
-h6 {
-  font-size: 1rem; }
-
-h5 {
-  font-size: 1.5rem; }
-
-h4 {
-  font-size: 2rem; }
-
-h3 {
-  font-size: 2.5rem; }
-
-h2 {
-  font-size: 3rem; }
-
-h1 {
-  font-size: 3.5rem; }
-
 /* ---FIRST SECTION = CONTENEDOR-PLANTAS ---*/
 .contenedor-plantas {
   text-align: center;
@@ -593,7 +426,7 @@ h1 {
         text-align: center;
         line-height: 1.5; }
 
-/* testimonios */
+/* FOURTH SECTION - Testimonios */
 .testimonios {
   margin: 5rem auto; }
   .testimonios .testimonios__contenedor div {
@@ -626,74 +459,8 @@ h1 {
     align-items: center;
     justify-content: center; }
 
-/* --------- FOURTH SECTION = pagos--index  ------------- */
-.pagos {
-  text-align: center;
-  gap: 2rem;
-  align-items: center !important;
-  justify-content: center !important; }
-  .pagos div {
-    display: block;
-    width: 100%;
-    height: 20rem;
-    padding: 2rem;
-    border-radius: 50px 27px 50px 27px;
-    position: relative;
-    animation-name: pagosdiv;
-    animation-duration: 2s;
-    animation-delay: 1s;
-    animation-fill-mode: both; }
-
-@keyframes pagosdiv {
-  50% {
-    transform: rotate(-20deg);
-    font-size: 2rem;
-    color: red; }
-  60% {
-    transform: rotate(-10deg);
-    color: orange; }
-  70% {
-    transform: rotate(20deg);
-    font-size: 4rem; }
-  85% {
-    color: #5e5b41;
-    background-color: var(--color2); }
-  100% {
-    top: 0px;
-    font-size: 3rem;
-    color: var(--color4);
-    border: 2px solid var(--verdeClaro); } }
-  .pagos img {
-    width: 100%;
-    height: 100%;
-    max-width: 30rem;
-    max-height: 20rem; }
-
 /* ------ Maceteros --------- */
 /* bootstrap en maceteros */
-/* paleta  de colores*/
-/* variables responsive */
-/* box-model */
-/* minxin */
-/* @each! */
-h6 {
-  font-size: 1rem; }
-
-h5 {
-  font-size: 1.5rem; }
-
-h4 {
-  font-size: 2rem; }
-
-h3 {
-  font-size: 2.5rem; }
-
-h2 {
-  font-size: 3rem; }
-
-h1 {
-  font-size: 3.5rem; }
-
 .card {
   max-width: 25rem !important;
   align-items: center !important;
@@ -725,29 +492,6 @@ h1 {
   justify-content: center;
   margin-bottom: 3rem !important;
   gap: 1rem; }
-
-/* paleta  de colores*/
-/* variables responsive */
-/* box-model */
-/* minxin */
-/* @each! */
-h6 {
-  font-size: 1rem; }
-
-h5 {
-  font-size: 1.5rem; }
-
-h4 {
-  font-size: 2rem; }
-
-h3 {
-  font-size: 2.5rem; }
-
-h2 {
-  font-size: 3rem; }
-
-h1 {
-  font-size: 3.5rem; }
 
 .fa-map-marker-alt {
   font-size: 1rem;
@@ -802,29 +546,6 @@ h1 {
   margin-bottom: 1rem; }
 
 /* --------------------------------- RESPONSIVE SECTION ------------------------------------ */
-/* paleta  de colores*/
-/* variables responsive */
-/* box-model */
-/* minxin */
-/* @each! */
-h6 {
-  font-size: 1rem; }
-
-h5 {
-  font-size: 1.5rem; }
-
-h4 {
-  font-size: 2rem; }
-
-h3 {
-  font-size: 2.5rem; }
-
-h2 {
-  font-size: 3rem; }
-
-h1 {
-  font-size: 3.5rem; }
-
 @media (min-width: 1080px) {
   .nav--menu ul {
     gap: 5rem; }
@@ -884,11 +605,6 @@ h1 {
         .testimonios .testimonios__contenedor div:hover i {
           color: #34592E;
           transition: all 1s ease-in-out; }
-  .pagos div {
-    transition: all .5s ease-in-out; }
-    .pagos div:hover {
-      transform: rotate(2deg) scale(1.1);
-      background-color: var(--color2); }
   /* footer */
   .footer__iconos--pago {
     display: flex;

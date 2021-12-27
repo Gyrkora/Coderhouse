@@ -1,6 +1,12 @@
 /* --FOOTER-- */
 
-@import '../base/variables.scss';
+// @import '../base/variables.scss';
+
+footer {
+    h6 {
+        font-size: 1.6rem;
+    }
+}
 
 .elementos-footer {
  
@@ -13,7 +19,7 @@
     "contacto productos  flechita"
     "logo  productos  flechita";
     }
-    background-color: var(--color1);
+    background-color: $verde-header;
     text-align: center;
     padding: 1rem 0 2rem 1rem;
     
@@ -64,10 +70,20 @@ footer ul {
      
 }
 
-
 .fa-whatsapp {
     font-size: 2rem;
-    color: var(--color4);
+    // color: var(--color4);
+    @extend .color-whatsapp;
+}
+
+.fa-instagram {
+    @extend .color-instagram;
+}
+.fa-facebook {
+    @extend .color-facebook;
+}
+.fa-youtube {
+    @extend .color-youtube;
 }
 
 
@@ -78,7 +94,7 @@ footer ul {
 .footer__iconos--pago {
     display: block;
     text-align: center;
-    background-color: var(--color4);
+    background-color: $verde-tarjetas;
 
     img {
         @include w-h(5rem, 3rem);
@@ -95,7 +111,7 @@ footer ul {
 
 .referencia {
     margin-left: 2rem;
-    color:var(--color2);
+    color: $verde-nav;
 
 }
 

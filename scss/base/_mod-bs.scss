@@ -1,6 +1,6 @@
 /* ------------------------ MODIFICACIONES BOOTSTRAP GENERALES------------------------------ */
 
-@import '../base/variables.scss';
+// @import '../base/variables.scss';
 
 .container {
     width: 100%;
@@ -25,13 +25,13 @@
     color: #0d6efd;
     text-decoration: none;
     background-color: #fff;
-    border: 1px solid var(--tierraOscuro) !important;
+    border: 1px solid $cafe-oscuro !important;
     padding: .5rem 1rem !important;
 
     &:hover {
       color: white !important;
-      background-color: var(--tierraOscuro);
-      border-color: var(--color4) !important;
+      background-color: $cafe-oscuro;
+      border-color: $verde-tarjetas !important;
   }
 }
 
