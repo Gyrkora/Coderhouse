@@ -6,7 +6,8 @@
     color: rgb(180, 164, 14);
     position: relative;
     animation: {
-        name: location 2s;
+        name: location;
+        duration: 2s; 
         delay: 1s;
         fill-mode: both;
     }   

@@ -497,7 +497,8 @@ footer ul {
   font-size: 1rem;
   color: #b4a40e;
   position: relative;
-  animation-name: location 2s;
+  animation-name: location;
+  animation-duration: 2s;
   animation-delay: 1s;
   animation-fill-mode: both; }
   .fa-map-marker-alt:hover {
