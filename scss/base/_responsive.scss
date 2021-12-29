@@ -23,6 +23,7 @@
     .extras__imgs {
         max-width: 120rem;
         width: 90%;
+        column-gap: 2rem;
         grid-template: {
             columns: 25% 25% 50%;
             rows: 20rem 35rem;

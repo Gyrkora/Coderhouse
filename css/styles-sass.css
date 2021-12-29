@@ -345,7 +345,7 @@ footer ul {
 .extras__imgs {
   display: grid;
   grid-row-gap: 1.5rem;
-  grid-column-gap: 2rem;
+  grid-column-gap: .5rem;
   grid-template-columns: 49% 49%;
   grid-template-rows: 20rem 35rem 40rem;
   grid-template-areas: "medicinales almacigos" "sustratos sustratos" "maceteros maceteros";
@@ -556,6 +556,7 @@ footer ul {
   .extras__imgs {
     max-width: 120rem;
     width: 90%;
+    column-gap: 2rem;
     grid-template-columns: 25% 25% 50%;
     grid-template-rows: 20rem 35rem;
     grid-template-areas: "medicinales almacigos maceteros maceteros" "sustratos sustratos maceteros maceteros"; }
