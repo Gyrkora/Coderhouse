@@ -1,9 +1,7 @@
-// @import '../base/variables.scss';
-
 
 .fa-map-marker-alt {
     font-size: 1rem;
-    color: rgb(180, 164, 14);
+    color: #64212F;
     position: relative;
     animation: {
         name: location;
@@ -23,7 +21,7 @@
     
     70% {font-size: 5rem; transform: translateY(-50px);}
     85% {color: rgb(94, 91, 65);}
-    100% {top: 0px; font-size: 3rem; color: rgb(180, 164, 14)}
+    100% {top: 0px; font-size: 3rem; color: #8f3549}
   }
 
 }

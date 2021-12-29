@@ -1,8 +1,5 @@
 /* ---------------- INDEX ------------------- */
 
-// @import '../base/variables.scss';
-
-
 /* ---FIRST SECTION = CONTENEDOR-PLANTAS ---*/
 
 
@@ -45,7 +42,7 @@
     background-color: $verde-nav;
     padding: 3rem 0;
     
-// 
+
     h2 {
         color: $cafe-oscuro;
     }
@@ -116,68 +113,13 @@
 
 
 
-/* ------- THIRD SECTION = Dónde encontrarnos ---------- */
 
-.encuentranos {
-    padding: 0 0 0 0;
-  
-}
-
-
-.nueva-ola {
-    @include bg-image ('../img/resp-guindas.JPG');
-    height: 800px;
-    position: relative;
-
-    .nueva-ola__contenido {
-        @include w-h (100%, 100%);
-        position: relative;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-
-        .nueva-ola__contenidointerno {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            background-color: lighten($verde-nav, 10%);
-            @include w-h (30rem, 20rem);
-            border-radius: $border-radius;
-            color: $cafe-oscuro;
-
-            p {
-                font-size: 2rem;
-                text-align: center;
-                margin: 0 !important;
-                font-size: 2.5rem;
-            }
-
-            h3 {
-                color: $cafe-oscuro;
-                text-align: center;
-                line-height: 1.5;
-            }
-
-        }
-
-  
-    }
-
-}
-
-
-
-/* FOURTH SECTION - Testimonios */
+/* THIRD SECTION - Testimonios */
 
 .testimonios {
 
-    // padding: 3rem 0;
     margin: 5rem auto;
 
-
-         
 
     .testimonios__contenedor {
         
@@ -216,7 +158,8 @@
         }
 
         i {
-            color: darken(yellow, 15%);
+            color: darken($amarillo-estrellasO, 20%);
+            
         }
     }
     
@@ -228,8 +171,69 @@
 
     }
 
+}
 
+
+
+
+
+
+/* ------- FOURTH SECTION = Dónde encontrarnos ---------- */
+
+.encuentranos {
+    padding: 0 0 0 0;
+  
+}
+
+
+.nueva-ola {
+    @include bg-image ('../img/resp-guindas.JPG');
+    height: 800px;
+    position: relative;
+
+    .nueva-ola__contenido {
+        @include w-h (100%, 100%);
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        .nueva-ola__contenidointerno {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-color: lighten($amarillo-estrellas, 20%);
+            @include w-h (30rem, 20rem);
+            border-radius: $border-radius;
+            color: $cafe-oscuro;
+            
+
+            p {
+                font-size: 2rem;
+                text-align: center;
+                margin: 0 !important;
+                font-size: 2.5rem;
+            }
+
+            h3 {
+                color: $cafe-oscuro;
+                text-align: center;
+                line-height: 1.5;
+                margin: 0 !important;
+
+            }
+
+        }
+
+  
+    }
 
 }
+
+
+
+
 
 

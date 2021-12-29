@@ -2,8 +2,6 @@
 
 /* --------------------------------- RESPONSIVE SECTION ------------------------------------ */
 
-// @import '../base/variables.scss';
-
 
 @media (min-width: $large){
 
@@ -48,6 +46,8 @@
         }
 }
 
+
+    
     .maceteros:hover {
         transform: translate(10px); 
  
@@ -75,7 +75,7 @@
         transform-origin: left;
     }
 
-    /* testimonios */
+    /* THIRD SECTION testimonios responsive */
 
     .testimonios {
 
@@ -139,9 +139,8 @@
         
     }
 
-    /* nueva-ola (third section responsive) */
+    /* nueva-ola (FOURTH section responsive) */
     .nueva-ola {
-        // @include bg-image ('../img/nuevaolacopias.jpg');
         @include bg-image ('../img/hero.JPG');
         height: 920px;
 
@@ -157,10 +156,8 @@
                 align-items: center;
                 left: 50px;
                 bottom: 120px;
-                background-color: $verde-header;
                 @include w-h (30rem, 20rem);
-                border-radius: $border-radius;
-                color: $cafe-oscuro;
+                
 
                 p {
                     font-size: 2rem;
@@ -199,7 +196,7 @@
 
 
     .card:hover {
-        background-color: rgb(165, 152, 152);
+        background-color: lighten($bg-products, 30%);
         cursor: pointer;
         transform: scale(1.1);
     }
@@ -272,27 +269,12 @@
        
     }  
 
-    /* fourth section = pagos--index */
-    .pagos { 
-        gap: 5rem;
-        flex-direction: row;
-        align-items: center;
-        justify-content: center;
-
-        div {
-            width: 30rem;
-    
-        }
- 
-    }
 
     .contenedor-resp {
         display: none;
     }
 }
 
-
-/* max-width */
 
 /* responsive contacto */
 

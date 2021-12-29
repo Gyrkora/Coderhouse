@@ -6,7 +6,9 @@ $verde-nav: #D3D9A7;
 $verde-tarjetas: #34592E;
 $cafe-oscuro: #733B2F;
 $cafe--claro: #BF9D7E;
-$bg-products: rgb(165, 152, 152);
+$bg-products: #F2C035;
+$amarillo-estrellas: #F2EA79;
+$amarillo-estrellasO: #D99923;
 
 
 
@@ -21,12 +23,6 @@ $large: 1080px;
 
 $border-radius: 1.5rem;
 $margin-sections: 7rem auto;
-
-
-
-
-//margin 
-
 
 
 /* minxin */
@@ -61,10 +57,10 @@ $modular-scale : 0.5;
 
 
 $redes-sociales: (
-  instagram: #cd486b,
-  facebook: #355391,
-  youtube: #d30404,
-  whatsapp: #075e54
+  instagram: #3d1711,
+  facebook: #223f7a,
+  youtube: #64212F,
+  whatsapp: #032b26
 );
 
 @each $red, $color in $redes-sociales {

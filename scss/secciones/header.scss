@@ -1,7 +1,5 @@
 /* --- Header --- */ 
 
-// @import '../base/variables.scss';
-
 
 .logo {
     
@@ -125,7 +123,6 @@
 /* --- HERO --- */
 
 .hero {
-    // @include bg-image('../img/background4.jpg');
     @include bg-image('../img/hero5.JPG');
     height: 40rem;
 }
