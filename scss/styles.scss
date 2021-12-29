@@ -1,19 +1,19 @@
 
  /* Globales */
-@import '../scss/base/fonts.scss';
-@import '../scss/base/variables.scss';
-@import '../scss/base/globales.scss';
-@import '../scss/base/mod-bs.scss';
-@import '../scss/base/componentes.scss';
+@import 'base/fonts.scss';
+@import 'base/variables.scss';
+@import 'base/globales.scss';
+@import 'base/mod-bs.scss';
+@import 'base/componentes.scss';
 
 
 /* componentes */
-@import "../scss/secciones/header.scss";
-@import '../scss/secciones/footer.scss';
+@import "secciones/header.scss";
+@import 'secciones/footer.scss';
 
 /* pages */
-@import '../scss/paginas/index.scss';
-@import "../scss/paginas/productos.scss";
-@import "../scss/paginas/contacto.scss";
+@import 'paginas/index.scss';
+@import "paginas/productos.scss";
+@import "paginas/contacto.scss";
 
-@import '../scss/base/responsive.scss';
+@import 'base/responsive.scss';
