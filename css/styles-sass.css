@@ -98,12 +98,6 @@ img {
 .container {
   width: 100%; }
 
-.carousel-control-prev-icon {
-  background-image: url("img/arrow-circle-left-solid.svg"); }
-
-.carousel-control-next-icon {
-  background-image: url("img/arrow-circle-right-solid.svg"); }
-
 .carousel2 {
   position: relative; }
 
@@ -131,14 +125,14 @@ img {
   max-width: 130rem !important; }
 
 /* components */
-.btn, .btn--extras, .btn--testimonios, .btn--formulario {
+.btn, .btn--extras, .btn--testimonios, .contenedor-eCommerce .btn-contenedor .btn--productos, .btn--formulario {
   padding: 1rem 3rem;
   font-size: 1.6rem;
   color: white;
   border-style: none;
   border-radius: 1.5rem; }
 
-.btn--extras, .btn--testimonios {
+.btn--extras, .btn--testimonios, .contenedor-eCommerce .btn-contenedor .btn--productos {
   background-color: #733B2F;
   cursor: pointer;
   display: block; }
@@ -179,9 +173,6 @@ img {
     height: 7rem;
     width: 10rem; }
 
-.carrito--responsive {
-  font-size: 4rem; }
-
 .logo--index {
   position: relative;
   margin-bottom: 1rem;
@@ -210,6 +201,9 @@ img {
     transform: translateY(0px); }
   100% {
     transform: translateY(10px); } }
+
+.carrito--responsive {
+  font-size: 4rem; }
 
 /* --- NAVEGACIÓN --- */
 .compras {
@@ -491,6 +485,34 @@ footer ul {
   margin-bottom: 3rem !important;
   gap: 1rem; }
 
+/* --------------- Product Expecific Page --------------- */
+.contenedor-eCommerce {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  max-width: 95%;
+  margin: 5rem auto; }
+  .contenedor-eCommerce--img {
+    max-width: 30rem;
+    max-height: 50rem; }
+  .contenedor-eCommerce--textos {
+    max-width: 95%; }
+    .contenedor-eCommerce--textos h3 {
+      font-weight: bold;
+      color: #733B2F; }
+    .contenedor-eCommerce--textos h4 {
+      font-weight: 600;
+      color: #D99923; }
+  .contenedor-eCommerce .btn-contenedor {
+    width: 95%;
+    display: block;
+    color: white; }
+    .contenedor-eCommerce .btn-contenedor .btn--productos {
+      background-color: #8b0000;
+      padding: 2rem 0; }
+
 .fa-map-marker-alt {
   font-size: 1rem;
   color: #64212F;
@@ -573,13 +595,13 @@ footer ul {
     transform: translate(10px); }
   .sustratos:hover {
     transform: translateX(-10px); }
-  .medicinales__contenido--index .btn--extras, .medicinales__contenido--index .btn--testimonios, .almacigos__contenido--index .btn--extras, .almacigos__contenido--index .btn--testimonios {
+  .medicinales__contenido--index .btn--extras, .medicinales__contenido--index .btn--testimonios, .medicinales__contenido--index .contenedor-eCommerce .btn-contenedor .btn--productos, .contenedor-eCommerce .btn-contenedor .medicinales__contenido--index .btn--productos, .almacigos__contenido--index .btn--extras, .almacigos__contenido--index .btn--testimonios, .almacigos__contenido--index .contenedor-eCommerce .btn-contenedor .btn--productos, .contenedor-eCommerce .btn-contenedor .almacigos__contenido--index .btn--productos {
     transition: all .5s ease-in-out; }
-  .medicinales__contenido--index:hover .btn--extras, .medicinales__contenido--index:hover .btn--testimonios, .almacigos__contenido--index:hover .btn--extras, .almacigos__contenido--index:hover .btn--testimonios {
+  .medicinales__contenido--index:hover .btn--extras, .medicinales__contenido--index:hover .btn--testimonios, .medicinales__contenido--index:hover .contenedor-eCommerce .btn-contenedor .btn--productos, .contenedor-eCommerce .btn-contenedor .medicinales__contenido--index:hover .btn--productos, .almacigos__contenido--index:hover .btn--extras, .almacigos__contenido--index:hover .btn--testimonios, .almacigos__contenido--index:hover .contenedor-eCommerce .btn-contenedor .btn--productos, .contenedor-eCommerce .btn-contenedor .almacigos__contenido--index:hover .btn--productos {
     transform: translateX(30%) translateY(-100%) scale(1.5); }
-  .maceteros__contenido--index .btn--extras, .maceteros__contenido--index .btn--testimonios, .sustratos__contenido--index .btn--extras, .sustratos__contenido--index .btn--testimonios {
+  .maceteros__contenido--index .btn--extras, .maceteros__contenido--index .btn--testimonios, .maceteros__contenido--index .contenedor-eCommerce .btn-contenedor .btn--productos, .contenedor-eCommerce .btn-contenedor .maceteros__contenido--index .btn--productos, .sustratos__contenido--index .btn--extras, .sustratos__contenido--index .btn--testimonios, .sustratos__contenido--index .contenedor-eCommerce .btn-contenedor .btn--productos, .contenedor-eCommerce .btn-contenedor .sustratos__contenido--index .btn--productos {
     transition: all .5s ease-in-out; }
-  .maceteros__contenido--index:hover .btn--extras, .maceteros__contenido--index:hover .btn--testimonios, .sustratos__contenido--index:hover .btn--extras, .sustratos__contenido--index:hover .btn--testimonios {
+  .maceteros__contenido--index:hover .btn--extras, .maceteros__contenido--index:hover .btn--testimonios, .maceteros__contenido--index:hover .contenedor-eCommerce .btn-contenedor .btn--productos, .contenedor-eCommerce .btn-contenedor .maceteros__contenido--index:hover .btn--productos, .sustratos__contenido--index:hover .btn--extras, .sustratos__contenido--index:hover .btn--testimonios, .sustratos__contenido--index:hover .contenedor-eCommerce .btn-contenedor .btn--productos, .contenedor-eCommerce .btn-contenedor .sustratos__contenido--index:hover .btn--productos {
     transform: translateX(20px) scale(2);
     transform-origin: left; }
   /* THIRD SECTION testimonios responsive */

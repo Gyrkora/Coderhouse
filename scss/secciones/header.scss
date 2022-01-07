@@ -10,60 +10,64 @@
     margin-bottom: 1rem;
 }
 
-}
+    &--nav {
+        background-color: $verde-header; 
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 5rem;
 
-.logo--nav {
-    background-color: $verde-header; 
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0 5rem;
+        img {
+            @include w-h(10rem, 7rem);
 
-    img {
-        @include w-h(10rem, 7rem);
-
+        }
     }
+
+
+    &--index {
+        position: relative;
+        margin-bottom: 1rem;
+        animation: animation-logo-index 2s;
+        animation: {
+            fill-mode: both;
+        }
+    }
+    
+    @keyframes animation-logo-index {
+        50% {transform: rotate(10deg);}
+        70% {
+            transform: rotate(-20deg); 
+            z-index: 1;
+            }
+        85% { transform: rotate(10deg);}
+        100% { transform: rotate(0);}
+        }
+    
+    
+    &--arriba {
+        position: relative;
+        margin-bottom: 1rem;
+        animation: animation-logo-arriba 1s;
+        animation: {
+            fill-mode: both;
+        }
+    }
+        
+    @keyframes animation-logo-arriba {
+        50% {transform: translateY(0px);}
+        100% { transform: translateY(10px);}
+        }
+    
+    
 }
+
+
 
 .carrito--responsive {
     font-size: 4rem;
 }
 
 
-
-.logo--index {
-    position: relative;
-    margin-bottom: 1rem;
-    animation: animation-logo-index 2s;
-    animation: {
-        fill-mode: both;
-    }
-}
-
-@keyframes animation-logo-index {
-    50% {transform: rotate(10deg);}
-    70% {
-        transform: rotate(-20deg); 
-        z-index: 1;
-        }
-    85% { transform: rotate(10deg);}
-    100% { transform: rotate(0);}
-    }
-
-
-.logo--arriba {
-    position: relative;
-    margin-bottom: 1rem;
-    animation: animation-logo-arriba 1s;
-    animation: {
-        fill-mode: both;
-    }
-}
-    
-@keyframes animation-logo-arriba {
-    50% {transform: translateY(0px);}
-    100% { transform: translateY(10px);}
-    }
 
 
 
