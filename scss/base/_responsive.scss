@@ -2,6 +2,7 @@
 
 /* --------------------------------- RESPONSIVE SECTION ------------------------------------ */
 
+/* --------------- large --------------- */
 
 @media (min-width: $large){
 
@@ -205,27 +206,29 @@
 }
 
 
+/* --------------- Medio-grande --------------- */
+
 /* media header */
 
 @media (min-width: 992px) {
     .logo--nav {
         display: block;
         text-align: center;
+
+        img {
+            @include w-h(15rem, 10rem);
+            
+        }
     }
 
     .carrito--responsive{
         display: none;
     }
 
-   .logo--nav {
-       img {
-           @include w-h(15rem, 10rem);
-           
-       }
-   }
 
 }
 
+/* --------------- medio-max --------------- */
 
 @media (min-width: $medium) and (max-width: 1079px)  {
        
@@ -236,12 +239,12 @@
 
     }
     .testimonios {
-        .testimonios__contenedor {
+        &__contenedor {
         
             display: grid;
             grid-template-columns: repeat(3, 1fr);        
    
-            .testimonio4 {
+            &4 {
                 display: none;
             }
         }
@@ -259,7 +262,7 @@
 }
 
 
-
+/* --------------- Medio --------------- */
 
 @media (min-width: $medium) {
     /* footer */
@@ -274,8 +277,79 @@
     .contenedor-resp {
         display: none;
     }
+
+
+    .contenedor-eCommerce {
+    
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        text-align: center;
+        justify-content: center;
+        max-width: 95%;
+        margin: 5rem auto;
+        column-gap: 2rem;
+
+        h3 {
+            margin-bottom: 2rem !important;
+            font-size: 3rem !important;
+
+            &::after {
+                content: "-10%";
+                background-color: $amarillo-estrellas;
+                margin: 1rem 0 0 1rem;
+                bottom: 7px;
+            }
+        }
+
+        .img-hidden {
+            display: none;
+        }
+
+
+        &--img {
+                @include bg-image ("../img/hero4.jpeg");
+                width: 35rem;
+                height: 55rem;
+                transition: filter 5s ease-in-out;
+
+                &:hover {
+                    @include bg-image ("../img/planta1.jpeg");
+                    
+            }
+        }
+
+
+        &--img1 {
+
+            border: 6px double $btn-productos;
+            max-width: 95%;
+            margin: 0 auto;
+
+        }
+
+        .desktop-ecommerce {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            
+        }
+
+        .btn-contenedor {
+
+            width: 95%;
+            display: block;
+            color: white;
+            margin: 3rem 0;
+        }    
+
+
+   
+    }
+    
 }
 
+
+/* --------------- celular --------------- */
 
 /* responsive contacto */
 

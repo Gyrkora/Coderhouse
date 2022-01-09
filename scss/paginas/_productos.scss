@@ -61,11 +61,41 @@
     max-width: 95%;
     margin: 5rem auto;
 
-    &--img {
-        max-width: 30rem;
-        max-height: 50rem;
+    h3 {
+        margin-bottom: 4rem !important;
+        position: relative;
+
+        &::after {
+            content: "-10%";
+            background-color: $amarillo-estrellas;
+            margin: 1rem 0 0 1rem;
+            bottom: 4px;
+            font-size: 1.5rem;
+            font-weight: normal;
+            position: absolute;
+        }
     }
 
+    .img-hidden {
+
+    text-align: center
+        
+    }
+
+
+    &--img {
+        @include bg-image ("../img/hero4.jpeg");
+        max-width: 35rem;
+        max-height: 55rem;
+        
+    }
+
+    &--img1 {
+
+        border: 6px double $btn-productos;
+            padding: 3rem;
+              
+    }
 
     &--textos {
 
@@ -89,6 +119,14 @@
         width: 95%;
         display: block;
         color: white;
+        
+        a {
+            font-size: 2.5rem !important;
+            
+            i {
+                margin: 0 1rem 0 0;
+            }
+        }
         
 
 

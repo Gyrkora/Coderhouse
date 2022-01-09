@@ -37,6 +37,37 @@ h1 {
 .color-whatsapp, .fa-whatsapp {
   color: #032b26; }
 
+/* loops */
+.m-t-1 {
+  margin-top: 1rem !important; }
+
+.m-t-2 {
+  margin-top: 2rem !important; }
+
+.m-t-3 {
+  margin-top: 3rem !important; }
+
+.m-t-4 {
+  margin-top: 4rem !important; }
+
+.m-t-5 {
+  margin-top: 5rem !important; }
+
+.m-t-6 {
+  margin-top: 6rem !important; }
+
+.m-t-7 {
+  margin-top: 7rem !important; }
+
+.m-t-8 {
+  margin-top: 8rem !important; }
+
+.m-t-9 {
+  margin-top: 9rem !important; }
+
+.m-t-10 {
+  margin-top: 10rem !important; }
+
 /* ---------------------------- Globales ------------------------------ */
 html {
   box-sizing: border-box;
@@ -494,9 +525,29 @@ footer ul {
   text-align: center;
   max-width: 95%;
   margin: 5rem auto; }
+  .contenedor-eCommerce h3 {
+    margin-bottom: 4rem !important;
+    position: relative; }
+    .contenedor-eCommerce h3::after {
+      content: "-10%";
+      background-color: #F2EA79;
+      margin: 1rem 0 0 1rem;
+      bottom: 4px;
+      font-size: 1.5rem;
+      font-weight: normal;
+      position: absolute; }
+  .contenedor-eCommerce .img-hidden {
+    text-align: center; }
   .contenedor-eCommerce--img {
-    max-width: 30rem;
-    max-height: 50rem; }
+    background-image: url("../img/hero4.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    max-width: 35rem;
+    max-height: 55rem; }
+  .contenedor-eCommerce--img1 {
+    border: 6px double #8b0000;
+    padding: 3rem; }
   .contenedor-eCommerce--textos {
     max-width: 95%; }
     .contenedor-eCommerce--textos h3 {
@@ -509,6 +560,10 @@ footer ul {
     width: 95%;
     display: block;
     color: white; }
+    .contenedor-eCommerce .btn-contenedor a {
+      font-size: 2.5rem !important; }
+      .contenedor-eCommerce .btn-contenedor a i {
+        margin: 0 1rem 0 0; }
     .contenedor-eCommerce .btn-contenedor .btn--productos {
       background-color: #8b0000;
       padding: 2rem 0; }
@@ -567,6 +622,7 @@ footer ul {
   margin-bottom: 1rem; }
 
 /* --------------------------------- RESPONSIVE SECTION ------------------------------------ */
+/* --------------- large --------------- */
 @media (min-width: 1080px) {
   .nav--menu ul {
     gap: 5rem; }
@@ -678,30 +734,33 @@ footer ul {
     cursor: pointer;
     transform: scale(1.1); } }
 
+/* --------------- Medio-grande --------------- */
 /* media header */
 @media (min-width: 992px) {
   .logo--nav {
     display: block;
     text-align: center; }
+    .logo--nav img {
+      height: 10rem;
+      width: 15rem; }
   .carrito--responsive {
-    display: none; }
-  .logo--nav img {
-    height: 10rem;
-    width: 15rem; } }
+    display: none; } }
 
+/* --------------- medio-max --------------- */
 @media (min-width: 768px) and (max-width: 1079px) {
   /* first section responsive*/
   .contenedor-plantas__divs {
     display: grid;
     grid-template-columns: repeat(3, 1fr); }
-  .testimonios .testimonios__contenedor {
+  .testimonios__contenedor {
     display: grid;
     grid-template-columns: repeat(3, 1fr); }
-    .testimonios .testimonios__contenedor .testimonio4 {
+    .testimonios__contenedor4 {
       display: none; }
   .imagen4 {
     display: none; } }
 
+/* --------------- Medio --------------- */
 @media (min-width: 768px) {
   /* footer */
   .elementos-footer {
@@ -709,8 +768,53 @@ footer ul {
     display: flex;
     justify-content: space-evenly; }
   .contenedor-resp {
-    display: none; } }
+    display: none; }
+  .contenedor-eCommerce {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    text-align: center;
+    justify-content: center;
+    max-width: 95%;
+    margin: 5rem auto;
+    column-gap: 2rem; }
+    .contenedor-eCommerce h3 {
+      margin-bottom: 2rem !important;
+      font-size: 3rem !important; }
+      .contenedor-eCommerce h3::after {
+        content: "-10%";
+        background-color: #F2EA79;
+        margin: 1rem 0 0 1rem;
+        bottom: 7px; }
+    .contenedor-eCommerce .img-hidden {
+      display: none; }
+    .contenedor-eCommerce--img {
+      background-image: url("../img/hero4.jpeg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center center;
+      width: 35rem;
+      height: 55rem;
+      transition: filter 5s ease-in-out; }
+      .contenedor-eCommerce--img:hover {
+        background-image: url("../img/planta1.jpeg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center; }
+    .contenedor-eCommerce--img1 {
+      border: 6px double #8b0000;
+      max-width: 95%;
+      margin: 0 auto; }
+    .contenedor-eCommerce .desktop-ecommerce {
+      display: flex;
+      align-items: center;
+      justify-content: center; }
+    .contenedor-eCommerce .btn-contenedor {
+      width: 95%;
+      display: block;
+      color: white;
+      margin: 3rem 0; } }
 
+/* --------------- celular --------------- */
 /* responsive contacto */
 @media (max-width: 1070px) {
   .planta-animada {

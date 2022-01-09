@@ -69,3 +69,12 @@ $redes-sociales: (
     color: $color;
   }
 }
+
+
+/* loops */
+
+@for $i from 1 through 10 {
+  .m-t-#{$i}{
+  margin-top: 1rem * $i !important;
+  }
+}
