@@ -1,6 +1,7 @@
 @charset "UTF-8";
 /* Globales */
 @import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=The+Nautigal&display=swap");
 /* FUENTES */
 /* paleta  de colores*/
 /* variables responsive */
@@ -267,15 +268,45 @@ img {
 /* --- TERMINA NAVEGACIÓN --- */
 /* --- HERO --- */
 .hero {
-  background-image: url("../img/hero5.JPG");
+  background-image: url("../img/hero-resp3.JPG");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
-  height: 40rem; }
+  height: 40rem;
+  position: relative; }
+  .hero h4 {
+    position: absolute;
+    margin: 0 !important;
+    bottom: 9rem;
+    font-size: 5rem !important;
+    margin: 0 !important;
+    color: #733B2F;
+    font-family: "The Nautigal", cursive !important;
+    max-width: 80vw;
+    text-align: left; }
+  .hero h1, .hero h4 {
+    position: absolute;
+    color: #733B2F;
+    font-family: "The Nautigal", cursive !important;
+    text-align: left;
+    left: 10vw; }
+    @media (max-width: 1315px) and (min-width: 864px) {
+      .hero h1, .hero h4 {
+        left: 3.5vw; } }
+  .hero h1 {
+    bottom: 15rem;
+    font-weight: bold !important;
+    font-size: 10rem; }
 
 /* --FOOTER-- */
-footer h6 {
-  font-size: 1.6rem; }
+footer h5 {
+  font-size: 1.6rem;
+  margin: 0 0 1rem 0 !important;
+  cursor: pointer;
+  transition: all .5s ease-in-out; }
+  footer h5:hover {
+    color: #733B2F;
+    transform: scale(1.1); }
 
 .elementos-footer {
   display: grid;
@@ -467,8 +498,8 @@ footer ul {
       justify-content: center;
       align-items: center;
       background-color: #fbf9d6;
-      height: 20rem;
-      width: 30rem;
+      max-width: 30rem;
+      max-height: 20rem;
       border-radius: 1.5rem;
       color: #733B2F; }
       .nueva-ola .nueva-ola__contenido .nueva-ola__contenidointerno p {
@@ -626,6 +657,34 @@ footer ul {
 @media (min-width: 1080px) {
   .nav--menu ul {
     gap: 5rem; }
+  .hero {
+    background-image: url("../img/hero5.JPG");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center; }
+    .hero h1, .hero h4 {
+      position: absolute;
+      color: #733B2F;
+      font-family: "The Nautigal", cursive !important;
+      text-align: left;
+      left: 10vw; } }
+    @media (min-width: 1080px) and (max-width: 1315px) and (min-width: 864px) {
+      .hero h1, .hero h4 {
+        left: 3.5vw; } }
+
+@media (min-width: 1080px) {
+    .hero h4 {
+      position: absolute;
+      bottom: 9rem;
+      font-size: 5rem !important;
+      margin: 0 !important;
+      color: #733B2F;
+      font-family: "The Nautigal", cursive !important;
+      text-align: left; }
+    .hero h1 {
+      bottom: 15rem;
+      font-weight: bold !important;
+      font-size: 10rem; }
   /* first section responsive */
   .contenedor-plantas__divs {
     display: grid;
@@ -652,7 +711,8 @@ footer ul {
   .sustratos:hover {
     transform: translateX(-10px); }
   .medicinales__contenido--index .btn--extras, .medicinales__contenido--index .btn--testimonios, .medicinales__contenido--index .contenedor-eCommerce .btn-contenedor .btn--productos, .contenedor-eCommerce .btn-contenedor .medicinales__contenido--index .btn--productos, .almacigos__contenido--index .btn--extras, .almacigos__contenido--index .btn--testimonios, .almacigos__contenido--index .contenedor-eCommerce .btn-contenedor .btn--productos, .contenedor-eCommerce .btn-contenedor .almacigos__contenido--index .btn--productos {
-    transition: all .5s ease-in-out; }
+    transition: all .5s ease-in-out;
+    max-width: 20rem; }
   .medicinales__contenido--index:hover .btn--extras, .medicinales__contenido--index:hover .btn--testimonios, .medicinales__contenido--index:hover .contenedor-eCommerce .btn-contenedor .btn--productos, .contenedor-eCommerce .btn-contenedor .medicinales__contenido--index:hover .btn--productos, .almacigos__contenido--index:hover .btn--extras, .almacigos__contenido--index:hover .btn--testimonios, .almacigos__contenido--index:hover .contenedor-eCommerce .btn-contenedor .btn--productos, .contenedor-eCommerce .btn-contenedor .almacigos__contenido--index:hover .btn--productos {
     transform: translateX(30%) translateY(-100%) scale(1.5); }
   .maceteros__contenido--index .btn--extras, .maceteros__contenido--index .btn--testimonios, .maceteros__contenido--index .contenedor-eCommerce .btn-contenedor .btn--productos, .contenedor-eCommerce .btn-contenedor .maceteros__contenido--index .btn--productos, .sustratos__contenido--index .btn--extras, .sustratos__contenido--index .btn--testimonios, .sustratos__contenido--index .contenedor-eCommerce .btn-contenedor .btn--productos, .contenedor-eCommerce .btn-contenedor .sustratos__contenido--index .btn--productos {
@@ -734,7 +794,7 @@ footer ul {
     cursor: pointer;
     transform: scale(1.1); } }
 
-/* --------------- Medio-grande --------------- */
+/* --------------- middle-large --------------- */
 /* media header */
 @media (min-width: 992px) {
   .logo--nav {
@@ -752,10 +812,10 @@ footer ul {
   .contenedor-plantas__divs {
     display: grid;
     grid-template-columns: repeat(3, 1fr); }
-  .testimonios__contenedor {
+  .testimonios .testimonios__contenedor {
     display: grid;
     grid-template-columns: repeat(3, 1fr); }
-    .testimonios__contenedor4 {
+    .testimonios .testimonios__contenedor .testimonios4 {
       display: none; }
   .imagen4 {
     display: none; } }
@@ -814,10 +874,12 @@ footer ul {
       color: white;
       margin: 3rem 0; } }
 
-/* --------------- celular --------------- */
+/* --------------- non-display --------------- */
 /* responsive contacto */
 @media (max-width: 1070px) {
   .planta-animada {
+    display: none; }
+  .testimonio4 {
     display: none; } }
 
 @media (max-width: 767px) {
@@ -826,3 +888,11 @@ footer ul {
   .img-responsive-carrusel img {
     height: 50rem;
     width: 35rem; } }
+
+/* --------------- small --------------- */
+@media (max-width: 480px) {
+  .hero h1 {
+    margin: 0 !important;
+    font-size: 10rem; }
+  .hero h4 {
+    bottom: 5rem; } }

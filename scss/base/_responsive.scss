@@ -13,11 +13,51 @@
     }
 }
 
+
+
+.hero {
+
+    @include bg-image('../img/hero5.JPG');
+
+
+    h1, h4 {
+
+        position: absolute;
+        color: $cafe-oscuro;
+        font-family: $fuenteHero !important;
+        text-align: left;
+        left: 10vw;
+        
+        @include media-if(1315px) {
+            left: 3.5vw;
+        }  
+
+    }
+
+    
+    h4 {
+
+        position: absolute;
+        bottom: 9rem;
+        font-size: 5rem !important;
+        margin: 0 !important;
+        color: $cafe-oscuro;
+        font-family: $fuenteHero !important;
+        text-align: left; 
+    }
+
+    h1 {
+        
+        bottom: 15rem;
+        font-weight: bold !important;
+        font-size: 10rem;
+    }
+}
+
     /* first section responsive */
     .contenedor-plantas__divs {
         display: grid;
         grid-template-columns: repeat(4, 1fr);  
-        // margin: 3rem 0 0 0;
  }
 
     /* second section responsive*/
@@ -61,6 +101,7 @@
 
     .medicinales__contenido--index .btn--extras, .almacigos__contenido--index .btn--extras {
         transition: all .5s ease-in-out;
+        max-width: 20rem;
     }
 
     .medicinales__contenido--index:hover .btn--extras, .almacigos__contenido--index:hover .btn--extras {
@@ -206,7 +247,7 @@
 }
 
 
-/* --------------- Medio-grande --------------- */
+/* --------------- middle-large --------------- */
 
 /* media header */
 
@@ -225,6 +266,7 @@
         display: none;
     }
 
+    
 
 }
 
@@ -239,12 +281,13 @@
 
     }
     .testimonios {
-        &__contenedor {
+
+        .testimonios__contenedor {
         
             display: grid;
             grid-template-columns: repeat(3, 1fr);        
    
-            &4 {
+            .testimonios4 {
                 display: none;
             }
         }
@@ -349,7 +392,7 @@
 }
 
 
-/* --------------- celular --------------- */
+/* --------------- non-display --------------- */
 
 /* responsive contacto */
 
@@ -357,10 +400,15 @@
     .planta-animada {
         display: none;
     }
+
+    .testimonio4 {
+        display: none;
+    }
 }
 
 
 @media (max-width: 767px) {
+
     .contenedor-desktop {
         display: none;
     }
@@ -368,8 +416,32 @@
     .img-responsive-carrusel img{
         @include w-h(35rem, 50rem);
     }
+
+    
     
 } 
- 
+
+
+/* --------------- small --------------- */
+
+@media (max-width: $small) { 
+
+    .hero {
+
+        h1 {
+            margin: 0 !important;
+            font-size: 10rem;
+            // bottom: 10px;
+
+        }
+        h4 {
+
+        bottom: 5rem;
+        }
+        
+    }
+    
+}
+
 
 

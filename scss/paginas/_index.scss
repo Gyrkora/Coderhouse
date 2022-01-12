@@ -203,7 +203,9 @@
             justify-content: center;
             align-items: center;
             background-color: lighten($amarillo-estrellas, 20%);
-            @include w-h (30rem, 20rem);
+            max-width: 30rem;
+            max-height: 20rem;
+            
             border-radius: $border-radius;
             color: $cafe-oscuro;
             

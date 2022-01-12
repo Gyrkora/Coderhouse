@@ -1,8 +1,17 @@
 /* --FOOTER-- */
 
 footer {
-    h6 {
+    h5 {
         font-size: 1.6rem;
+        margin: 0 0 1rem 0 !important;
+        cursor: pointer;
+        transition: all .5s ease-in-out;
+
+        &:hover {   
+            color: $cafe-oscuro;
+            transform: scale(1.1);
+            
+        }
     }
 }
 

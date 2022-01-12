@@ -10,6 +10,7 @@ $bg-products: #F2C035;
 $amarillo-estrellas: #F2EA79;
 $amarillo-estrellasO: #D99923;
 $btn-productos: #8b0000;
+$color-hero: #934D4D;
 
 
 
@@ -18,6 +19,7 @@ $btn-productos: #8b0000;
 $small: 480px;
 $medium: 768px;
 $large: 1080px;
+$xl: 1445px;
 
 
 /* box-model */
@@ -41,6 +43,20 @@ $margin-sections: 7rem auto;
         position: center center;
     }
 }
+
+
+
+@mixin media-if($media)  {
+    
+  @if $media == 1315px {
+      @media (max-width: 1315px ) and (min-width: 864px ) { 
+          @content;
+       }
+  }
+
+}
+
+
 
 /* @each! */
 
