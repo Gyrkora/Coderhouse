@@ -13,7 +13,17 @@
         max-width: 20rem;
         height: 25rem;
     }
+
+    h2 {
+        font-size: 2.5rem !important;
+    }
+
+    h3 {
+        font-size: 1.6rem !important;
+    }
 }
+
+
 
 
   .col {
@@ -26,6 +36,11 @@
  .btn-primary {
      background-color: $cafe-oscuro !important;
      color: white !important;
+
+     &:focus, &:active, &:checked {
+         border-color: $cafe-oscuro !important;
+         box-shadow: 0 0 0 0.25rem rgba(85, 50, 4, 0.5);
+     }
  }
 
 
@@ -106,9 +121,11 @@
             color: $cafe-oscuro;
         }
 
-        h4 {
+        h2 {
             font-weight: 600;
             color: $amarillo-estrellasO;
+            font-size: 2rem;
+            animation: none !important;
 
         }
     

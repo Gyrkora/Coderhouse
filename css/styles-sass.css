@@ -524,6 +524,10 @@ footer ul {
   .card img {
     max-width: 20rem;
     height: 25rem; }
+  .card h2 {
+    font-size: 2.5rem !important; }
+  .card h3 {
+    font-size: 1.6rem !important; }
 
 .col {
   display: flex;
@@ -533,6 +537,9 @@ footer ul {
 .btn-primary {
   background-color: #733B2F !important;
   color: white !important; }
+  .btn-primary:focus, .btn-primary:active, .btn-primary:checked {
+    border-color: #733B2F !important;
+    box-shadow: 0 0 0 0.25rem rgba(85, 50, 4, 0.5); }
 
 .maceteros-gap {
   grid-row-gap: 5rem;
@@ -584,9 +591,11 @@ footer ul {
     .contenedor-eCommerce--textos h3 {
       font-weight: bold;
       color: #733B2F; }
-    .contenedor-eCommerce--textos h4 {
+    .contenedor-eCommerce--textos h2 {
       font-weight: 600;
-      color: #D99923; }
+      color: #D99923;
+      font-size: 2rem;
+      animation: none !important; }
   .contenedor-eCommerce .btn-contenedor {
     width: 95%;
     display: block;
@@ -651,6 +660,14 @@ footer ul {
 #nombre, #phone, #apellido {
   height: 3rem;
   margin-bottom: 1rem; }
+
+.contenedor-contato h3 {
+  font-size: 1.8rem !important;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin: 1rem 0 !important; }
+
+.contenedor-contato p {
+  font-size: 1.7rem !important; }
 
 /* --------------------------------- RESPONSIVE SECTION ------------------------------------ */
 /* --------------- large --------------- */
