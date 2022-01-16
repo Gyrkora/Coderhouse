@@ -96,20 +96,29 @@
                     <div class="carousel-inner">
                         <div class="carousel-item active">
                             <div class="contenedor-imagenes">
-                                <img src="img/planta1.jpeg" alt="planta color rojo oscuro">
+                                <picture>
+                                    <source srcset="build/imgs/planta1.webp" type="image/webp">
+                                    <img src="build/imgs/planta1.jpeg" alt="planta color rojo oscuro">   
+                                </picture>
                                 <p>Alegría del Hogar</p>
                             </div>
                         </div>
                         <div class="carousel-item">
                             <div class="contenedor-imagenes">
-                                <img src="img/planta1.jpeg" alt="planta color rosa">
-                                <p>Alegría del Hogar</p>
+                                <picture>
+                                    <source srcset="build/imgs/planta2.webp" type="image/webp">
+                                    <img src="build/imgs/planta2.jpeg" alt="planta color rosa">
+                                </picture>
+                                <p>Maravillas</p>
                             </div>
                         </div>
                         <div class="carousel-item">
                             <div class="contenedor-imagenes">
-                                <img src="img/planta1.jpeg" alt="planta color verde oscuro y verde claro">
-                                <p>Alegría del Hogar</p>
+                                <picture>
+                                    <source srcset="build/imgs/planta3.webp" type="image/webp">
+                                    <img src="build/imgs/planta3.jpeg" alt="planta color verde oscuro y verde claro">
+                                </picture>
+                                <p>Petunias</p>
                             </div>
                         </div>
                     </div>
@@ -138,43 +147,67 @@
                         <div class="carousel-item active">
                             <div class="contenedor-plantas__imgs contenedor-plantas__divs">
                                 <div>
-                                    <img src="img/planta1.jpeg" alt="planta color rojo oscuro">
+                                    <picture>
+                                        <source srcset="build/imgs/planta1.webp" type="image/webp">
+                                        <img src="build/imgs/planta1.jpeg" alt="planta color rojo oscuro">
+                                    </picture>
                                     <p>Alegría del Hogar</p>
                                 </div>
                                 <div>
-                                    <img src="img/planta3.jpeg" alt="planta color rojo claro">
+                                    <picture>
+                                        <source srcset="build/imgs/planta3.webp" type="image/webp">
+                                        <img src="build/imgs/planta3.jpeg" alt="planta color rojo claro">
+                                    </picture>
                                     <p>Alegría del Hogar</p>
                                 </div>
 
                                 <div>
-                                    <img src="img/planta2.jpeg" alt="planta color verde oscuro">
+                                    <picture>
+                                        <source srcset="build/imgs/planta5.webp" type="image/webp">
+                                        <img src="build/imgs/planta5.jpeg" alt="planta color verde oscuro">
+                                    </picture>
                                     <p>Alegría del Hogar</p>
                                 </div>
 
                                 <div class="imagen4">
-                                    <img src="img/planta4.jpeg" alt="planta color verde claro">
-                                    <p>Alegría del Hogar</p>
+                                    <picture>
+                                        <source srcset="build/imgs/planta6.webp" type="image/webp">
+                                        <img src="build/imgs/planta6.jpeg" alt="planta color verde claro">
+                                    </picture>
+                                    <p>Dolar verde</p>
                                 </div>
                             </div>
                         </div>
                         <div class="carousel-item">
                             <div class="contenedor-plantas__imgs contenedor-plantas__divs">
                                 <div>
-                                    <img src="img/planta1.jpeg" alt="planta color naranja">
-                                    <p>Alegría del Hogar</p>
+                                    <picture>
+                                        <source srcset="build/imgs/planta7-7.webp" type="image/webp">
+                                        <img src="build/imgs/planta7-7.jpeg" alt="planta color naranja">
+                                    </picture>
+                                    <p>Cala española</p>
                                 </div>
                                 <div>
-                                    <img src="img/planta1.jpeg" alt="planta para el exterior">
+                                    <picture>
+                                        <source srcset="build/imgs/planta8.webp" type="image/webp">
+                                        <img src="build/imgs/planta8.jpeg" alt="planta para el exterior">
+                                    </picture>
                                     <p>Alegría del Hogar</p>
                                 </div>
 
                                 <div>
-                                    <img src="img/planta1.jpeg" alt="planta para el exterior">
+                                    <picture>
+                                        <source srcset="build/imgs/planta6.webp" type="image/webp">
+                                        <img src="build/imgs/planta6.jpeg" alt="planta para el exterior">
+                                    </picture>
                                     <p>Alegría del Hogar</p>
                                 </div>
 
                                 <div class="imagen4">
-                                    <img src="img/planta4.jpeg" alt="planta para el exterior">
+                                    <picture>
+                                        <source srcset="build/imgs/planta7.webp" type="image/webp">
+                                        <img src="build/imgs/planta7.jpeg" alt="planta para el exterior">
+                                    </picture>
                                     <p>Alegría del Hogar</p>
                                 </div>
                             </div>
@@ -462,6 +495,7 @@
 
 
 
+    <script src="js/modernizer.js" ></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>AOS.init();</script>
     <script src="js/bs/bootstrap.js"></script>

@@ -267,8 +267,11 @@ img {
 
 /* --- TERMINA NAVEGACIÓN --- */
 /* --- HERO --- */
+.non-web .hero {
+  background-image: url("../build/imgs/hero-resp3.jpg"); }
+
 .hero {
-  background-image: url("../img/hero-resp3.JPG");
+  background-image: url("../build/imgs/hero-resp3.webp");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;

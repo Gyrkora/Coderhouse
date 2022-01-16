@@ -126,54 +126,66 @@
 
 /* --- HERO --- */
 
-.hero {
-    background: {
-        image: url('../img/hero-resp3.JPG');
-        repeat: no-repeat;
-        size: cover;
-        position: center center;
-    }
-    height: 40rem;
-    position: relative;
 
 
+ .non-web {
+     .hero {
+        background: {
+            image: url('../build/imgs/hero-resp3.jpg');
+            
+        }
+     }
+ }
 
 
+    .hero {
     
-    h4 {
-
-        position: absolute;
-        margin: 0 !important;
-        bottom: 9rem;
-        font-size: 5rem !important;
-        margin: 0 !important;
-        color: $cafe-oscuro;
-        font-family: $fuenteHero !important;
-        max-width: 80vw;
-        text-align: left;
-    }
-
-    h1, h4 {
-
-        position: absolute;
-        color: $cafe-oscuro;
-        font-family: $fuenteHero !important;
-        text-align: left;
-        left: 10vw;
-        @include media-if(1315px) {
-            left: 3.5vw;
-        }  
-
-    }
-
-    h1 {
+        background: {
+            image: url('../build/imgs/hero-resp3.webp');
+            repeat: no-repeat;
+            size: cover;
+            position: center center;
+        }
+        height: 40rem;
+        position: relative;
+    
         
-        bottom: 15rem;
-        font-weight: bold !important;
-        font-size: 10rem;
-        
+        h4 {
+    
+            position: absolute;
+            margin: 0 !important;
+            bottom: 9rem;
+            font-size: 5rem !important;
+            margin: 0 !important;
+            color: $cafe-oscuro;
+            font-family: $fuenteHero !important;
+            max-width: 80vw;
+            text-align: left;
+        }
+    
+        h1, h4 {
+    
+            position: absolute;
+            color: $cafe-oscuro;
+            font-family: $fuenteHero !important;
+            text-align: left;
+            left: 10vw;
+            @include media-if(1315px) {
+                left: 3.5vw;
+            }  
+    
+        }
+    
+        h1 {
+            
+            bottom: 15rem;
+            font-weight: bold !important;
+            font-size: 10rem;
+            
+        }
     }
-}
+
+
 
 
 
