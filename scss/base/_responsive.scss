@@ -350,13 +350,13 @@
 
 
         &--img {
-                @include bg-image ("../img/hero4.jpeg");
+                @include bg-image ("../build/imgs/hero4.webp");
                 width: 35rem;
                 height: 55rem;
                 transition: filter 5s ease-in-out;
 
                 &:hover {
-                    @include bg-image ("../img/planta1.jpeg");
+                    @include bg-image ("../build/imgs/planta1.webp");
                     
             }
         }

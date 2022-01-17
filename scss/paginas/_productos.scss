@@ -99,7 +99,7 @@
 
 
     &--img {
-        @include bg-image ("../img/hero4.jpeg");
+        @include bg-image ("../build/imgs/hero4.webp");
         max-width: 35rem;
         max-height: 55rem;
         
