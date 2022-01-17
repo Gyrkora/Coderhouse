@@ -407,7 +407,7 @@ footer ul {
   grid-column-gap: .5rem;
   grid-template-columns: 49% 49%;
   grid-template-rows: 20rem 35rem 40rem;
-  grid-template-areas: "medicinales almacigos" "sustratos sustratos" "maceteros maceteros";
+  grid-template-areas: "medicinales medicinales" "almacigos almacigos" "sustratos sustratos" "maceteros maceteros";
   margin: 5rem auto;
   justify-content: center; }
 
@@ -427,21 +427,33 @@ footer ul {
   height: 100%;
   border-radius: 1.5rem; }
 
+.non-web .medicinales {
+  background-image: url("../build/imgs/medicinales.jpg"); }
+
+.non-web .almacigos {
+  background-image: url("../build/imgs/almacigos.jpg"); }
+
+.non-web .maceteros {
+  background-image: url("../build/imgs/maceteros.jpg"); }
+
+.non-web .sustratos {
+  background-image: url("../build/imgs/fruto.jpeg"); }
+
 .medicinales {
   grid-area: medicinales;
-  background-image: url(../img/medicinales.jpg); }
+  background-image: url("../build/imgs/medicinales.webp"); }
 
 .almacigos {
   grid-area: almacigos;
-  background-image: url(../img/almacigos.jpg); }
+  background-image: url("../build/imgs/almacigos.webp"); }
 
 .maceteros {
   grid-area: maceteros;
-  background-image: url(../img/maceteros.jpg); }
+  background-image: url("../build/imgs/maceteros.webp"); }
 
 .sustratos {
   grid-area: sustratos;
-  background-image: url(../img/fruto.jpeg); }
+  background-image: url("../build/imgs/fruto.webp"); }
 
 /* THIRD SECTION - Testimonios */
 .testimonios {
@@ -481,7 +493,7 @@ footer ul {
   padding: 0 0 0 0; }
 
 .nueva-ola {
-  background-image: url("../img/resp-guindas.JPG");
+  background-image: url("../build/imgs/resp-guindas.JPG");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
