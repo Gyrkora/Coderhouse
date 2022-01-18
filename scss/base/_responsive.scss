@@ -17,7 +17,7 @@
 
 .hero {
 
-    @include bg-image('../img/hero5.JPG');
+    @include bg-image('../build/imgs/hero5.webp');
 
 
     h1, h4 {
@@ -169,11 +169,15 @@
     
 }
 
+ 
+    
+
 
     
 
-    /* footer */
+   /* footer */
     .footer__iconos--pago {
+
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -184,7 +188,7 @@
 
     /* nueva-ola (FOURTH section responsive) */
     .nueva-ola {
-        @include bg-image ('../img/hero.JPG');
+        @include bg-image ('../build/imgs/hero.webp');
         height: 920px;
 
         .nueva-ola__contenido {
@@ -308,13 +312,45 @@
 /* --------------- Medio --------------- */
 
 @media (min-width: $medium) {
+
     /* footer */
     .elementos-footer {
-        padding: 2rem 0;
-        display: flex;
-        justify-content: space-evenly;
-       
-    }  
+        
+        text-align: center;
+        justify-content: center;
+        padding: 1rem 0 2rem 1rem;
+        display: grid;
+        grid-template: {
+            columns: 23% 20% 20% 20% 17%;
+            areas:
+        "logo contacto productos  social-media flechita"
+        "logo contacto productos  social-media flechita";
+        }
+        
+    }
+    
+    .div-logo--footer {
+        grid-area: logo;
+    }
+    .div-productos {
+        grid-area: productos;
+        
+    }
+    .div-contacto {
+        grid-area: contacto;
+    
+    }
+    .div-flechita {
+        grid-area: flechita;
+    }
+    
+    .div-social-media {
+        text-align: center;
+        grid-area: social-media;
+    }
+ 
+
+    
 
 
     .contenedor-resp {
@@ -430,12 +466,9 @@
 
         h1 {
             margin: 0 !important;
-            font-size: 10rem;
-            // bottom: 10px;
-
+            font-size: 9rem;
         }
         h4 {
-
         bottom: 5rem;
         }
         

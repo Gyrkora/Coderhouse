@@ -6,6 +6,7 @@ footer {
         margin: 0 0 1rem 0 !important;
         cursor: pointer;
         transition: all .5s ease-in-out;
+        line-height: 1 !important;
 
         &:hover {   
             color: $cafe-oscuro;
@@ -17,41 +18,50 @@ footer {
 
 .elementos-footer {
  
-    display: grid;
-    grid-template: {
-        columns: 30% 35% 35%;
-        rows: 38% 31% 31%;
-        areas:
-    "contacto productos  social-media"
-    "contacto productos  flechita"
-    "logo  productos  flechita";
-    }
-    background-color: $verde-header;
-    text-align: center;
-    padding: 1rem 0 2rem 1rem;
+//     display: grid;
+//     grid-template: {
+//         columns: 30% 35% 35%;
+//         rows: 38% 31% 31%;
+//         areas:
+//     "contacto productos  social-media"
+//     "contacto productos  flechita"
+//     "logo  productos  flechita";
+//     }
+//     
+//     text-align: center;
+//     padding: 1rem 0 2rem 1rem;
     
-}
+// }
 
-
-.div-logo--footer {
-    grid-area: logo;
-}
-.div-productos {
-    grid-area: productos;
-}
-.div-contacto {
-    grid-area: contacto;
-
-}
-.div-flechita {
-    grid-area: flechita;
-}
-
-
-.div-social-media {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     text-align: center;
-    grid-area: social-media;
+    background-color: $verde-header;
+
 }
+
+
+// .div-logo--footer {
+//     grid-area: logo;
+// }
+// .div-productos {
+//     grid-area: productos;
+// }
+// .div-contacto {
+//     grid-area: contacto;
+
+// }
+// .div-flechita {
+//     grid-area: flechita;
+// }
+
+
+// .div-social-media {
+//     text-align: center;
+//     grid-area: social-media;
+// }
 
 
 footer ul {

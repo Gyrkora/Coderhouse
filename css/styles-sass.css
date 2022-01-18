@@ -299,42 +299,27 @@ img {
   .hero h1 {
     bottom: 15rem;
     font-weight: bold !important;
-    font-size: 10rem; }
+    font-size: 10rem;
+    padding-right: 3rem; }
 
 /* --FOOTER-- */
 footer h5 {
   font-size: 1.6rem;
   margin: 0 0 1rem 0 !important;
   cursor: pointer;
-  transition: all .5s ease-in-out; }
+  transition: all .5s ease-in-out;
+  line-height: 1 !important; }
   footer h5:hover {
     color: #733B2F;
     transform: scale(1.1); }
 
 .elementos-footer {
-  display: grid;
-  grid-template-columns: 30% 35% 35%;
-  grid-template-rows: 38% 31% 31%;
-  grid-template-areas: "contacto productos  social-media" "contacto productos  flechita" "logo  productos  flechita";
-  background-color: #A4BF69;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   text-align: center;
-  padding: 1rem 0 2rem 1rem; }
-
-.div-logo--footer {
-  grid-area: logo; }
-
-.div-productos {
-  grid-area: productos; }
-
-.div-contacto {
-  grid-area: contacto; }
-
-.div-flechita {
-  grid-area: flechita; }
-
-.div-social-media {
-  text-align: center;
-  grid-area: social-media; }
+  background-color: #A4BF69; }
 
 footer ul {
   line-height: 2;
@@ -406,7 +391,7 @@ footer ul {
   grid-row-gap: 1.5rem;
   grid-column-gap: .5rem;
   grid-template-columns: 49% 49%;
-  grid-template-rows: 20rem 35rem 40rem;
+  grid-template-rows: 20rem 35rem 40rem 40rem;
   grid-template-areas: "medicinales medicinales" "almacigos almacigos" "sustratos sustratos" "maceteros maceteros";
   margin: 5rem auto;
   justify-content: center; }
@@ -690,7 +675,7 @@ footer ul {
   .nav--menu ul {
     gap: 5rem; }
   .hero {
-    background-image: url("../img/hero5.JPG");
+    background-image: url("../build/imgs/hero5.webp");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center; }
@@ -784,7 +769,7 @@ footer ul {
     padding: 1rem 0; }
   /* nueva-ola (FOURTH section responsive) */
   .nueva-ola {
-    background-image: url("../img/hero.JPG");
+    background-image: url("../build/imgs/hero.webp");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -856,9 +841,23 @@ footer ul {
 @media (min-width: 768px) {
   /* footer */
   .elementos-footer {
-    padding: 2rem 0;
-    display: flex;
-    justify-content: space-evenly; }
+    text-align: center;
+    justify-content: center;
+    padding: 1rem 0 2rem 1rem;
+    display: grid;
+    grid-template-columns: 23% 20% 20% 20% 17%;
+    grid-template-areas: "logo contacto productos  social-media flechita" "logo contacto productos  social-media flechita"; }
+  .div-logo--footer {
+    grid-area: logo; }
+  .div-productos {
+    grid-area: productos; }
+  .div-contacto {
+    grid-area: contacto; }
+  .div-flechita {
+    grid-area: flechita; }
+  .div-social-media {
+    text-align: center;
+    grid-area: social-media; }
   .contenedor-resp {
     display: none; }
   .contenedor-eCommerce {
@@ -925,6 +924,6 @@ footer ul {
 @media (max-width: 480px) {
   .hero h1 {
     margin: 0 !important;
-    font-size: 10rem; }
+    font-size: 9rem; }
   .hero h4 {
     bottom: 5rem; } }
