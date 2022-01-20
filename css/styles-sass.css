@@ -2,6 +2,9 @@
 /* Globales */
 @import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@300&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=The+Nautigal&display=swap");
+/* pruebas */
+@import url("https://fonts.googleapis.com/css2?family=Courgette&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 /* FUENTES */
 /* paleta  de colores*/
 /* variables responsive */
@@ -101,7 +104,7 @@ h1, h2, h3, h4, h5 {
   margin: 2rem 0 !important; }
 
 h2, h1 {
-  font-family: "Inconsolata", monospace;
+  font-family: "Courgette", cursive;
   font-weight: bold;
   color: #733B2F;
   animation: example 2s; }
@@ -125,6 +128,12 @@ img {
 
 .en-cursiva {
   font-style: italic; }
+
+p, h4, h5 {
+  font-family: "Poppins", sans-serif !important; }
+
+.nueva-ola__contenidointerno {
+  font-family: "Courgette", cursive; }
 
 /* ------------------------ MODIFICACIONES BOOTSTRAP GENERALES------------------------------ */
 .container {
@@ -168,6 +177,8 @@ img {
   background-color: #733B2F;
   cursor: pointer;
   display: block; }
+  .btn--extras p, .btn--testimonios p, .contenedor-eCommerce .btn-contenedor .btn--productos p {
+    margin: 0 !important; }
 
 .btn--formulario {
   background-color: #A4BF69;
@@ -244,7 +255,7 @@ img {
 
 .nav--menu {
   background-color: #D3D9A7;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Poppins", sans-serif;
   padding: 0;
   margin: 0; }
   .nav--menu ul {
@@ -453,6 +464,8 @@ footer ul {
     padding: 1rem;
     margin: 4rem 1rem;
     background-color: #e5e8cb; }
+    .testimonios .testimonios__contenedor div picture {
+      margin-bottom: 2rem; }
   .testimonios .testimonios__contenedor .valoraciones {
     height: 6rem;
     width: 20rem;
@@ -506,7 +519,8 @@ footer ul {
         font-size: 2rem;
         text-align: center;
         margin: 0 !important;
-        font-size: 2.5rem; }
+        font-size: 2.5rem;
+        font-family: "Courgette", cursive !important; }
       .nueva-ola .nueva-ola__contenido .nueva-ola__contenidointerno h3 {
         color: #733B2F;
         text-align: center;
@@ -528,6 +542,10 @@ footer ul {
     font-size: 2.5rem !important; }
   .card h3 {
     font-size: 1.6rem !important; }
+  .card p {
+    margin-bottom: 2rem !important; }
+  .card .btn-primary p {
+    margin-bottom: 0 !important; }
 
 .col {
   display: flex;
@@ -663,7 +681,7 @@ footer ul {
 
 .contenedor-contato h3 {
   font-size: 1.8rem !important;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Poppins", sans-serif;
   margin: 1rem 0 !important; }
 
 .contenedor-contato p {

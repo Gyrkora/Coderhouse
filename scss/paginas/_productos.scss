@@ -21,6 +21,16 @@
     h3 {
         font-size: 1.6rem !important;
     }
+
+    p {
+        margin-bottom: 2rem !important;
+    }
+
+    .btn-primary {
+        p {
+            margin-bottom: 0 !important;
+        }
+    }
 }
 
 
